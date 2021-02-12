@@ -1,4 +1,4 @@
-[Home Page](index.md) [Academic](Academic.md) [Experiences](Experiences.md) [Sports](Sports.md) [Travel](Travel.md)
+[Home Page](index.md) | [Academic](Academic.md) | [Experiences](Experiences.md) | [Sports](Sports.md) | [Travel](Travel.md)
 
 ## Welcome to my homepage
 
