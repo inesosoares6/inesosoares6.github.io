@@ -1,0 +1,223 @@
+html, body {
+  min-height: 100%;
+}
+
+.cover-photo {
+    border-radius: 50%;
+    width: 300px;
+}
+
+.navbar-margin {
+    margin-top: 100px;
+}
+
+.logos {
+    border-radius: 5%;
+}
+
+.portfolio-card {
+  width: 406px;
+  max-height: 243px;
+}
+
+.portfolio-col {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  text-align: justify;
+}
+
+.contact-image {
+  width: 20%
+}
+
+.contact-div-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.travel-title {
+  letter-spacing: 10px;
+  font-size: 40px;
+}
+
+@media (min-width: 1000px) {
+  .chess-card {
+    display: flex;
+    justify-content: end;
+  }
+  .electric-card {
+    display: flex;
+    justify-content: start;
+  }
+
+  .quote {
+    width: 50%;
+  }
+
+  .contact-div-image {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 5rem;
+  }
+
+  .contact-image {
+    width: 40%
+  }
+  
+  .travel-title {
+    letter-spacing: 30px;
+    font-size: 80px;
+  }
+
+  .iframe-style {
+    width: 75%;
+    height: 444px;
+  }
+
+  .image-crop-horizontal {
+    /* object-fit: none;  */
+    object-position: center;
+    height: 400px;
+  }
+  
+}
+
+
+@media (max-width: 1000px) {
+  .iframe-style {
+    width: 75%;
+    height: 200px;
+  }
+
+  .image-crop-horizontal {
+    /* object-fit: none;  */
+    object-position: center;
+    height: 200px;
+  }
+}
+
+
+@media (min-width: 640px) {
+  .small-logo {
+    display: none!important;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .work-logo {
+    display: none!important;
+  }
+}
+
+.work-logo {
+    display: flex;
+    align-items: center;
+}
+
+.link-tag:link, .link-tag:visited {
+  color: rgb(var(--bs-tertiary-color-rgb));
+  background-color: transparent;
+  text-decoration: underline;
+  text-decoration-color: grey;
+}
+
+.link-no-underline:link, .link-no-underline:visited {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.text-modal-trigger {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: grey;
+}
+
+.modal-body {
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+}
+
+.image-crop {
+  /* object-fit: none;  */
+  object-position: center;
+  max-height: 600px;
+}
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: rgb(var(--bs-tertiary-color-rgb));
+  }
+  
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  /* rtl:end:ignore */
+  
+  
+  /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 3rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  /* rtl:begin:remove */
+  .featurette-heading {
+    letter-spacing: -.05rem;
+  }
+  
+  /* rtl:end:remove */
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+
+  
+  .feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+  }
+  
+  .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .75rem;
+  }
+  
+  .text-shadow-1 { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
+  
+  .card-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }

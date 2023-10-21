@@ -1,93 +1,417 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Ines Soares | Home</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="images/logo.jpg">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inês Soares</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="icon" href="assets/IS.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#shoppingModalContent").load("./modals/portfolio/shoppingList.html");
+        $("#workoutsModalContent").load("./modals/portfolio/workoutsApp.html");
+        $("#bucketListModalContent").load("./modals/portfolio/bucketList.html");
+        $("#chessModalContent").load("./modals/portfolio/chessGame.html");
+        $("#electricModalContent").load(
+          "./modals/portfolio/electricCarsApp.html"
+        );
+      });
+    </script>
+  </head>
+  <body class="bg-gradient">
+    <!-- Header -->
+    <nav
+      class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
+      aria-label="Fourth navbar example"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample04"
+          aria-controls="navbarsExample04"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Inês Soares</h1>
-						<p>Software Engineer @ <a href="https://kaizengaming.com/" target="_blank" rel="noopener noreferrer">Kaizen Gaming</a> </p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./index.html"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-house-door-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./work.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./academic.html">Academic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./travel.html">Travel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sports.html">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.linkedin.com/in/ines-soares"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  fill="currentColor"
+                  class="bi bi-linkedin"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://github.com/inesosoares6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://drive.google.com/drive/folders/19vQcMkU6VvguD7HfsRRtJksrcpaIfRVu?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  fill="currentColor"
+                  class="bi bi-file-person-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Welcome</a>
-					</header>
+    <!-- Hero Section -->
+    <div class="container col-xxl-8 px-4 pt-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="./assets/photo-cover.jpg"
+            class="d-block mx-lg-auto img-fluid cover-photo"
+            alt="Portrait Photo"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            Inês Soares
+          </h1>
+          <h3>Frontend Web Developer</h3>
+          <p class="lead">
+            Hey there, I'm Inês and I love creating new things. I've been
+            working as a Frontend Web Developer at Kaizen Gaming since February
+            2023. I'm a very active person and from a young age I learnt how to
+            define priorities and manage time. I've been playing volleyball for
+            17 years and I enjoy the time between seasons to travel the world.
+            To combine my interests, in my free time I like to develop some
+            mobile apps to simplify my daily life.
+          </p>
+        </div>
+      </div>
+    </div>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html" class="icon solid fa-home"></a></li>
-							<li><a href="work.html">Professional</a></li>
-							<li><a href="academic.html">Academic</a></li>
-							<li><a href="experiences.html">Experiences</a></li>
-							<li><a href="sports.html">Sports</a></li>
-							<li><a href="travel.html">Travel</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/ines-soares" class="icon brands fa-linkedin-in" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/inesosoares6" class="icon brands fa-github"><span class="label" target="_blank" rel="noopener noreferrer">GitHub</span></a></li>
-							<li><a href="https://drive.google.com/drive/folders/19vQcMkU6VvguD7HfsRRtJksrcpaIfRVu?usp=sharing" class="icon brands fa-google-drive" target="_blank" rel="noopener noreferrer"><span class="label">Drive</span></a></li>
-						</ul>
-					</nav>
+    <!-- Portfolio Section -->
+    <div class="container px-4" id="custom-cards">
+      <div class="row row-cols-1 row-cols-lg-3 g-4 pt-5 pb-2">
+        <div class="col portfolio-col">
+          <div
+            class="card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('./assets/shopping.png');
+              cursor: pointer;
+            "
+            data-bs-target="#shoppingModal"
+            data-bs-toggle="modal"
+          >
+            <div
+              class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1"
+            >
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Shopping List
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="./assets/vuejs.svg" alt="VueJs logo" width="25" />
+                  <img src="./assets/quasar.svg" alt="Quasar Logo" width="25" />
+                  <img src="./assets/firebase.svg" alt="Firebase" width="25" />
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    fill="currentColor"
+                    class="bi bi-github"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="shoppingModalContent"></div>
+        </div>
 
-				<!-- Main -->
-					<div id="main">
+        <div class="col portfolio-col">
+          <div
+            class="card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('./assets/workout.png');
+              cursor: pointer;
+            "
+            data-bs-target="#workoutsModal"
+            data-bs-toggle="modal"
+          >
+            <div
+              class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1"
+            >
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Workouts App
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="./assets/vuejs.svg" alt="VueJs logo" width="25" />
+                  <img
+                    src="./assets/vuetifyjs.svg"
+                    alt="VueJs logo"
+                    width="25"
+                  />
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    fill="currentColor"
+                    class="bi bi-github"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="workoutsModalContent"></div>
+        </div>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2>Inês de Oliveira Soares</h2>
-									<p style="text-align:left;font-size:25px">
-										<span class="image left"><img src="images/IS_photo_CEiiA_noBg.png" alt="Inês Soares"/></span></p>
-									<p style="text-align:justify">
-									<b>Hi&ensp;</b> <img src="images/hand.gif" style="height:32px"><br/>
-									I am Inês, I am 24 years old and I am an Electrical and Computer Engineer. Robots fascinate me since I was a child. In fact, I started entering robot competitions when I was only 10. 
-									So, for a long time, I knew that I would be studying Electrical and Computer Engineering; my master thesis consisted 
-									in developing a human-robot interface to program by demonstration an industrial robot using Extended Reality. In addition to robotics, I have a 
-									particular interest in Artificial Intelligence and Machine Learning, subjects that I studied during my semester abroad in Poland.<br/> <br/>
-									Besides studying, I love to do sports, more specifically, I practiced Karate for 10 years and I have been playing Volleyball for almost 15.
-									At a certain time, I was doing both sports, but it was impossible to manage the two sports at the same time because the schedules overlapped. 
-									So, I decided for the one that challenged me the most, Volleyball, and now I dare to say that it was the right choice. I was team captain 
-									for 6 years and in 2 of them we were able to win the National Championship.<br/> <br/>
-									Ever since I can remember, I have loved traveling and one of my hobbies is to plan trips. During my semester abroad I organized weekend trips 
-									for my group of friends almost every week. This enabled me to explore Poland and all countries around it; each weekend a new city, sometimes 
-									more than one per weekend. Until now, the biggest trip that I organized was in 2017, Route 66 in the USA, the mother road that connects Chicago 
-									to Los Angeles, it lasted 25 days and I must say that it was life changing. <br/> <br/>
-									A fun fact about me is that I have more pleasure doing tasks when I feel challenged, so why should I say no to new adventures? 
-									Moreover, if this new challenge expands my comfort zone, it is certain that I am going to accept it. 
-									Beyond that, I do my very best in every single task, to meet the goal and to be proud of the final result. 
-									This is how my mindset works, instead of thinking ``Why?" I always think ``Why not?".</p>
-								</header>
-							</article>
-					</div>
+        <div class="col portfolio-col">
+          <div
+            class="card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('./assets/travel.png');
+              cursor: pointer;
+            "
+            data-bs-target="#bucketListModal"
+            data-bs-toggle="modal"
+          >
+            <div class="d-flex flex-column h-100 p-4 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Bucket List App
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="./assets/kotlin.svg" alt="VueJs logo" width="25" />
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    fill="currentColor"
+                    class="bi bi-github"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="bucketListModalContent"></div>
+      </div>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Inês Soares</li><li>Software Engineer</li></ul>
-					</div>
-			</div>
+      <div class="row row-cols-1 row-cols-lg-2 g-4 pb-5 pt-2">
+        <div class="col portfolio-col chess-card">
+          <div
+            class="card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('./assets/chess.png'); cursor: pointer"
+            data-bs-target="#chessModal"
+            data-bs-toggle="modal"
+          >
+            <div class="d-flex flex-column h-100 p-4 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Progr(Ch)ess
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="./assets/unity.svg"
+                    alt="Unity logo"
+                    width="25"
+                    class="me-1"
+                  />
+                  <img
+                    src="./assets/cardboard.svg"
+                    alt="Google cardboard logo"
+                    width="25"
+                  />
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    fill="currentColor"
+                    class="bi bi-github"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="chessModalContent"></div>
+        </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <div class="col portfolio-col electric-card">
+          <div
+            class="card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('./assets/electric.png');
+              cursor: pointer;
+            "
+            data-bs-target="#electricModal"
+            data-bs-toggle="modal"
+          >
+            <div class="d-flex flex-column h-100 p-4 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Electric Charging
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="./assets/kotlin.svg"
+                    alt="Kotlin logo"
+                    width="25"
+                    class="me-1"
+                  />
+                  <img
+                    src="./assets/firebase.svg"
+                    alt="Firebase Logo"
+                    width="25"
+                  />
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    fill="currentColor"
+                    class="bi bi-github"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="electricModalContent"></div>
+    </div>
 
-	</body>
+    <!-- Footer -->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top"
+      >
+        <span class="mb-3 mb-md-0 text-body-secondary"
+          >© Inês Soares | Web Developer</span
+        >
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

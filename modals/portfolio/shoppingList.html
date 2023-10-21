@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <div id="shoppingModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div
+          class="d-flex justify-content-between p-3 align-items-center border-bottom"
+        >
+          <div class="d-flex w-100 justify-content-between align-items-center">
+            <h3
+              class="modal-title d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="./assets/shopping-icon.png"
+                alt="Shopping List Logo"
+                width="35"
+                class="me-3"
+              />Shopping List
+            </h3>
+            <div class="me-3">
+              <img
+                src="./assets/vuejs.svg"
+                alt="VueJs logo"
+                width="25"
+                class="me-2"
+              />
+              <img
+                class="me-2"
+                src="./assets/quasar.svg"
+                alt="Quasar Logo"
+                width="25"
+              />
+              <img src="./assets/firebase.svg" alt="Firebase Logo" width="25" />
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div class="container py-3 px-5">
+            <div class="row row-cols-1 row-cols-lg-2">
+              <div class="col col-lg-8">
+                <h2>Context</h2>
+                <p>
+                  This app was created to solve an existing problem in my home.
+                  So, before this app, we had a paper in our house where we
+                  would write the things to buy at the supermarket. But the
+                  problem was that most of the time we would forget the paper at
+                  home, or we wanted to add something and we were not home. To
+                  solve all those problems, my parents asked me to create an app
+                  that would be our shopping list and it was shared by all of us
+                  in real time.
+                </p>
+                <h2>Requirements</h2>
+                <ul>
+                  <li>
+                    Common list shared by our family (each member would have an
+                    account);
+                  </li>
+                  <li>To have a catalog to store the products;</li>
+                  <li>Ability to add, remove or update items on the list;</li>
+                  <li>
+                    To have a list of favorite products that could be easily
+                    added (for example, products that we need to buy weekly);
+                  </li>
+                  <li>Ability to create multiple lists;</li>
+                  <li>Ability to filter product when searching.</li>
+                </ul>
+                <h2>Development</h2>
+                <h6>Technologies:</h6>
+                <ul>
+                  <li>Frameworks: VueJS and Quasar</li>
+                  <li>State Management: Pinia</li>
+                  <li>
+                    Database: Google Firebase (Authentication and Realtime
+                    Database)
+                  </li>
+                </ul>
+                <p>
+                  Source code on Github
+                  <a
+                    href="https://github.com/inesosoares6/ShoppingList_v2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link-tag"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      fill="currentColor"
+                      class="bi bi-github ms-2"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                      />
+                    </svg>
+                  </a>
+                </p>
+              </div>
+              <div class="col col-lg-4 d-flex justify-content-center">
+                <img
+                  class="image-crop"
+                  src="./assets/shoppingApp.gif"
+                  alt="App demo gif"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>

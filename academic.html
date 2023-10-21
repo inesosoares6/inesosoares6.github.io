@@ -1,110 +1,480 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Ines Soares | Academic</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="images/logo.jpg">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inês Soares</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="icon" href="assets/IS.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#thesisModalContent").load("./modals/academic/thesis.html");
+      });
+    </script>
+  </head>
+  <body class="bg-gradient">
+    <!-- Header -->
+    <nav
+      class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
+      aria-label="Fourth navbar example"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample04"
+          aria-controls="navbarsExample04"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-house-door-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./work.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./academic.html"
+                >Academic</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./travel.html">Travel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sports.html">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.linkedin.com/in/ines-soares"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  fill="currentColor"
+                  class="bi bi-linkedin"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://github.com/inesosoares6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://drive.google.com/drive/folders/19vQcMkU6VvguD7HfsRRtJksrcpaIfRVu?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  fill="currentColor"
+                  class="bi bi-file-person-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="academic.html" class="logo">Academic</a>
-					</header>
+    <!-- University -->
+    <div class="container pt-5">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis"
+                >Porto, Portugal</strong
+              >
+              <div class="row d-flex justify-content-between">
+                <div class="col-9 col-lg-11">
+                  <h3 class="mb-0">
+                    Faculdade de Engenharia da Universidade do Porto
+                  </h3>
+                  <div class="mb-1 text-body-secondary">2016-2021</div>
+                </div>
+                <div class="col-auto small-logo">
+                  <img src="./assets/feup.png" alt="FEUP logo" width="50" />
+                </div>
+              </div>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html" class="icon solid fa-home"></a></li>
-							<li><a href="work.html">Professional</a></li>
-							<li class="active"><a href="academic.html">Academic</a></li>
-							<li><a href="experiences.html">Experiences</a></li>
-							<li><a href="sports.html">Sports</a></li>
-							<li><a href="travel.html">Travel</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/ines-soares" class="icon brands fa-linkedin-in" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/inesosoares6" class="icon brands fa-github"><span class="label" target="_blank" rel="noopener noreferrer">GitHub</span></a></li>
-							<li><a href="https://drive.google.com/drive/folders/19vQcMkU6VvguD7HfsRRtJksrcpaIfRVu?usp=sharing" class="icon brands fa-google-drive" target="_blank" rel="noopener noreferrer"><span class="label">Drive</span></a></li>
-						</ul>
-					</nav>
+              <p class="card-text mb-auto">
+                Master Degree in Electrical and Computer Engineering
+              </p>
+              <ul>
+                <li>Automation branch with Robotics specialization</li>
+                <li>Grade 17 out of 20</li>
+              </ul>
+            </div>
+            <div class="col-auto p-4 work-logo">
+              <img src="./assets/feup.png" alt="FEUP logo" width="150" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis"
+                >Porto, Portugal</strong
+              >
+              <div class="row d-flex justify-content-between">
+                <div class="col-9 col-lg-11">
+                  <h3 class="mb-0">INESC TEC</h3>
+                  <div class="mb-1 text-body-secondary">2021</div>
+                </div>
+                <div class="col-auto small-logo">
+                  <img
+                    src="./assets/inesctec.png"
+                    alt="INESCTEC logo"
+                    width="50"
+                  />
+                </div>
+              </div>
+              <p class="card-text mb-auto" style="text-align: start">
+                Programming Robots by Demonstration using Augmented Reality
+              </p>
+              <ul class="mb-0">
+                <li>
+                  <span
+                    class="text-modal-trigger"
+                    data-bs-target="#thesisModal"
+                    data-bs-toggle="modal"
+                    >Master Thesis</span
+                  >: Demonstration of concept
+                  <a
+                    href="https://www.youtube.com/watch?v=joV-4uArWDw&ab_channel=INESC-TECRobotics"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link-tag"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-youtube"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>Grade 19 out of 20 & 2 published articles</li>
+                <li>
+                  Best Master's Thesis in Robotics -
+                  <a
+                    href="http://www.sprobotica.pt/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link-tag"
+                    >SPR</a
+                  >
+                  (2022)
+                </li>
+              </ul>
+            </div>
+            <div class="col-auto p-4 work-logo">
+              <img
+                src="./assets/inesctec.png"
+                alt="INESCTEC logo"
+                width="150"
+              />
+            </div>
+          </div>
+          <div id="thesisModalContent"></div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis"
+                >Wroclaw, Poland</strong
+              >
+              <div class="row d-flex justify-content-between">
+                <div class="col-9 col-lg-11">
+                  <h3 class="mb-0">
+                    Wroclaw University of Science and Technology
+                  </h3>
+                  <div class="mb-1 text-body-secondary">2019-2020</div>
+                </div>
+                <div class="col-auto small-logo">
+                  <img
+                    src="./assets/wroclaw.png"
+                    alt="Wroclaw university logo"
+                    width="50"
+                  />
+                </div>
+              </div>
 
-				<!-- Main -->
-					<div id="main">
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">2016-2021</span>
-										<h2>Faculdade de Engenharia da Universidade do Porto</h2>
-										<p style="text-align:center">Porto, Portugal</p>
-									</header>
-									<a href="https://sigarra.up.pt/feup/en/WEB_PAGE.INICIAL" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/feup-logo.png" alt="" /></a>
-									<p>Master Degree in Electrical and Computer Engineering<br />
-									 - Automation branch with Robotics especialization<br />
-									 - Grade 17 out of 20</p>
-									
-								</article>
-								<article>
-									<header>
-										<span class="date">2021</span>
-										<h2><a href="thesis.html">Programming Robots by Demonstration using Augmented Reality</a></h2>
-										<p style="text-align:center">Porto, Portugal</p>
-									</header>
-									<a href="https://www.inesctec.pt/en" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/inesctec.png" alt="" /></a>
-									<p><b><a href="thesis.html">Master thesis</a></b><br />
-									 - Demonstration of concept <a href="https://youtu.be/joV-4uArWDw" class="icon brands fa-youtube" target="_blank" rel="noopener noreferrer"></a><br />
-									 - Grade 19 out of 20 & 2 published articles <br/>
-									 - Best Master's Thesis in Robotics - <a href="http://www.sprobotica.pt/" target="_blank" rel="noopener noreferrer">SPR</a> (2022)</p>
-								</article>
-								<article>
-									<header>
-										<span class="date">2019-2020</span>
-										<h2>Wroclaw University of Science and Technology</h2>
-										<p style="text-align:center">Wroclaw, Poland</p>
-									</header>
-									<a href="https://pwr.edu.pl/en/" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/pol-logo.png" alt="" /></a>
-									<p>Erasmus+ Program - Semester abroad<br />
-									 - Artificial Intelligence & Machine Learning<br />
-									 - Robotic Programming Environments</p>
-								</article>
-								<article>
-									<header>
-										<span class="date">2009-2016, 2021</span>
-										<h2>Bristol School</h2>
-										<p style="text-align:center">Maia, Portugal</p>
-									</header>
-									<a href="https://bristolschool.pt/" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/bristol.png" alt="" /></a>
-									<p><b>Language School </b> <br />
-									 &emsp; - Certificate in Advanced English @ <a href="https://www.cambridgeenglish.org/" target="_blank" rel="noopener noreferrer">Cambridge</a> <br />
-									 &emsp;&emsp;&emsp; Level C2: 206 / 210 (2021) <br />
-									 &emsp; - First Certificate Exam @ <a href="https://www.cambridgeenglish.org/" target="_blank" rel="noopener noreferrer">Cambridge</a> <br />
-									 &emsp;&emsp;&emsp; Level B2: 172 / 190 (2015) <br />   </p>
-								</article>
-							</section>
+              <p class="card-text mb-auto">
+                Erasmus+ Program - Semester abroad
+              </p>
+              <ul>
+                <li>Artificial Intelligence & Machine Learning</li>
+                <li>Robotic Programming Environments</li>
+              </ul>
+            </div>
+            <div class="col-auto p-4 work-logo">
+              <img
+                src="./assets/wroclaw.png"
+                alt="Wroclaw university logo"
+                width="150"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis"
+                >Bristol School Maia, Portugal</strong
+              >
+              <div class="row d-flex justify-content-between">
+                <div class="col-9 col-lg-11">
+                  <h3 class="mb-1">
+                    University of Cambridge English Language Exams
+                  </h3>
+                </div>
+                <div class="col-auto small-logo">
+                  <img
+                    src="./assets/cambridge.png"
+                    alt="Cambridge university logo"
+                    width="50"
+                  />
+                </div>
+              </div>
+              <ul>
+                <li>Certificate in Advanced English @ Cambridge</li>
+                <ul>
+                  <li>Level C2: 206 / 210 (2021)</li>
+                </ul>
+                <li>First Certificate Exam @ Cambridge</li>
+                <ul>
+                  <li>Level B2: 172 / 190 (2015)</li>
+                </ul>
+              </ul>
+            </div>
+            <div class="col-auto p-4 work-logo">
+              <img
+                src="./assets/cambridge.png"
+                alt="Cambridge university logo"
+                width="150"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-					</div>
+    <!-- Courses -->
+    <div class="container px-4 py-5" id="hanging-icons">
+      <h2 class="pb-2 border-bottom">Online Courses</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div
+            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              fill="currentColor"
+              class="bi bi-robot"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219V8.062Zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.767 24.767 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25.286 25.286 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135Z"
+              />
+              <path
+                d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2V1.866ZM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5Z"
+              />
+            </svg>
+          </div>
+          <div>
+            <h3 class="fs-2 text-body-emphasis">Robotics</h3>
+            <h6 style="color: grey">
+              @ Coursera, University of Pennsylvania (2021)
+            </h6>
+            <ul>
+              <li>Computational Motion Planning, Mobility</li>
+              <li>Perception, Estimation and Learning</li>
+              <li>Overall result: 98 %</li>
+            </ul>
+            <a
+              href="https://www.coursera.org/programs/ceiia-centro-de-engenharia-e-desenvolvimento-learning-program-059os/specializations/robotics"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              View Syllabus
+            </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div
+            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              fill="currentColor"
+              class="bi bi-android2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m10.213 1.471.691-1.26c.046-.083.03-.147-.048-.192-.085-.038-.15-.019-.195.058l-.7 1.27A4.832 4.832 0 0 0 8.005.941c-.688 0-1.34.135-1.956.404l-.7-1.27C5.303 0 5.239-.018 5.154.02c-.078.046-.094.11-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.697 3.697 0 0 0 3.5 5.02h9c0-.75-.208-1.44-.623-2.072a4.266 4.266 0 0 0-1.664-1.476ZM6.22 3.303a.367.367 0 0 1-.267.11.35.35 0 0 1-.263-.11.366.366 0 0 1-.107-.264.37.37 0 0 1 .107-.265.351.351 0 0 1 .263-.11c.103 0 .193.037.267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264Zm4.101 0a.351.351 0 0 1-.262.11.366.366 0 0 1-.268-.11.358.358 0 0 1-.112-.264c0-.103.037-.191.112-.265a.367.367 0 0 1 .268-.11c.104 0 .19.037.262.11a.367.367 0 0 1 .107.265c0 .102-.035.19-.107.264ZM3.5 11.77c0 .294.104.544.311.75.208.204.46.307.76.307h.758l.01 2.182c0 .276.097.51.292.703a.961.961 0 0 0 .7.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182c0 .276.097.51.292.703a.972.972 0 0 0 .71.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76c.291 0 .54-.103.749-.308.207-.205.311-.455.311-.75V5.365h-9v6.404Zm10.495-6.587a.983.983 0 0 0-.702.278.91.91 0 0 0-.293.685v4.063c0 .271.098.501.293.69a.97.97 0 0 0 .702.284c.28 0 .517-.095.712-.284a.924.924 0 0 0 .293-.69V6.146a.91.91 0 0 0-.293-.685.995.995 0 0 0-.712-.278Zm-12.702.283a.985.985 0 0 1 .712-.283c.273 0 .507.094.702.283a.913.913 0 0 1 .293.68v4.063a.932.932 0 0 1-.288.69.97.97 0 0 1-.707.284.986.986 0 0 1-.712-.284.924.924 0 0 1-.293-.69V6.146c0-.264.098-.491.293-.68Z"
+              />
+            </svg>
+          </div>
+          <div>
+            <h3 class="fs-2 text-body-emphasis">Kotlin</h3>
+            <h6 style="color: grey">
+              @ Android Traning Program by Google (2020)
+            </h6>
+            <ul>
+              <li>Foundations, Jetpack, Firebase</li>
+              <li>10 weeks developing a project</li>
+              <li>Final project: Electric Car Charging App</li>
+            </ul>
+            <a
+              href="https://github.com/up201606615/app_SEAI_G"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              View Project
+            </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div
+            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              fill="currentColor"
+              class="bi bi-cpu-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"
+              />
+              <path
+                d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z"
+              />
+            </svg>
+          </div>
+          <div>
+            <h3 class="fs-2 text-body-emphasis">Machine Learning</h3>
+            <h6 style="color: grey">@ Coursera, Stanford University (2019)</h6>
+            <ul>
+              <li>Regression, SVM, Neural Networks</li>
+              <li>11 weeks with tests at the end of each week</li>
+              <li>Overall result: 96 %</li>
+            </ul>
+            <a
+              href="https://www.coursera.org/learn/machine-learning"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              View Syllabus
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Inês Soares</li><li>Software Engineer</li></ul>
-					</div>
+    <!-- Footer -->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top"
+      >
+        <span class="mb-3 mb-md-0 text-body-secondary"
+          >© Inês Soares | Web Developer</span
+        >
+      </footer>
+    </div>
 
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

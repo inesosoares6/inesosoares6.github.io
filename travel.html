@@ -1,207 +1,559 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Ines Soares | Travel</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="images/logo.jpg">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inês Soares</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="icon" href="assets/IS.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#usaModalContent").load("./modals/travel/usa.html");
+        $("#polandModalContent").load("./modals/travel/poland.html");
+        $("#belgiumModalContent").load("./modals/travel/belgium.html");
+        $("#netherlandsModalContent").load("./modals/travel/netherlands.html");
+      });
+    </script>
+  </head>
+  <body class="bg-gradient">
+    <!-- Header -->
+    <nav
+      class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
+      aria-label="Fourth navbar example"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample04"
+          aria-controls="navbarsExample04"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-				<!-- Header -->
-					<header id="header">
-						<a href="travel.html" class="logo">Travel</a>
-					</header>
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-house-door-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./work.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./academic.html">Academic</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./travel.html"
+                >Travel</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sports.html">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.linkedin.com/in/ines-soares"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  fill="currentColor"
+                  class="bi bi-linkedin"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://github.com/inesosoares6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://drive.google.com/drive/folders/19vQcMkU6VvguD7HfsRRtJksrcpaIfRVu?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  fill="currentColor"
+                  class="bi bi-file-person-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html" class="icon solid fa-home"></a></li>
-							<li><a href="work.html">Professional</a></li>
-							<li><a href="academic.html">Academic</a></li>
-							<li><a href="experiences.html">Experiences</a></li>
-							<li><a href="sports.html">Sports</a></li>
-							<li class="active"><a href="travel.html">Travel</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://github.com/inesosoares6/app_BucketList" class="icon brands fa-github"><span class="label" target="_blank" rel="noopener noreferrer">GitHub</span></a></li>
-							<li><a href="https://www.instagram.com/inesosoares6/" class="icon brands fa-instagram" target="_blank" rel="noopener noreferrer"><span class="label">Drive</span></a></li>
-						</ul>
-					</nav>
+    <!-- Map -->
+    <div class="container">
+      <!-- https://www.mapchart.net/world.html -->
+      <img src="./assets/travel/world-map.png" alt="World Map" class="w-100" />
+    </div>
 
-				<!-- Main -->
-					<div id="main">
+    <div class="container text-center pt-3">
+      <h1 class="travel-title">WANDERLUST</h1>
+    </div>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2>Wanderlust</h2>
-									<p>Since I can remember, I love traveling and one of my hobbies is to plan trips. During my semester abroad I organized 
-									weekend trips for my group of friends almost every week. This enabled me to explore Poland and all countries around it;
-									 each weekend a new city, sometimes more than one per weekend. Until now, the biggest trip that I organized was in 2017, 
-									 the Route 66 in USA, the mother road that connects Chicago to Los Angeles,it lasted 25 days and I must say that it was 
-									 life changing. Below are presented all the trips I planned and made happen so far.</p>
-								</header>
-								<a class="image main"><img src="images/grand-canyon.jpg" alt="" /></a>
-							</article>
+    <!-- Album -->
+    <div class="album py-5">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./assets/travel/switzerland.png"
+                alt="switzerland photo"
+              />
+              <div class="card-body">
+                <h2 class="text-center">Switzerland</h2>
+                <p class="card-text text-center">
+                  Wengen - Lauterbrunnen - Interlaken - Iseltwald - Grindelwald
+                  - Mürren
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div></div>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
+                  <small class="text-body-secondary">2023</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/travel/bergamo.png" alt="bergamo photo" />
+              <div class="card-body">
+                <h2 class="text-center">Italy</h2>
+                <p class="card-text text-center">Bergamo - Venice - Tropea</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div></div>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
+                  <small class="text-body-secondary">2018 - 2023</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/travel/albania.png" alt="albania photo" />
+              <div class="card-body">
+                <h2 class="text-center">Albania</h2>
+                <p class="card-text text-center">
+                  Himarë - Saranda - Ksamil - Gjirokastër - Berat - Tirana
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div></div>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
+                  <small class="text-body-secondary">2023</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./assets/travel/luxembourg.png"
+                alt="luxembourg photo"
+              />
+              <div class="card-body">
+                <h2 class="text-center">Luxembourg</h2>
+                <p class="card-text text-center">
+                  Luxembourg - Ettelbruck - Diekirch
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div></div>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
+                  <small class="text-body-secondary">2022 - 2023</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/travel/berlin.jpg" alt="berlin photo" />
+              <div class="card-body">
+                <h2 class="text-center">Germany</h2>
+                <p class="card-text text-center">
+                  Berlin - Munich - Dresden - Leipzig - Trier
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div></div>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
+                  <small class="text-body-secondary">2019 - 2023</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./assets/travel/copenhagen.png"
+                alt="copenhagen photo"
+              />
+              <div class="card-body">
+                <h2 class="text-center">Denmark</h2>
+                <p class="card-text text-center">Copenhagen</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div></div>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
+                  <small class="text-body-secondary">2022</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/travel/malmo.png" alt="malmo photo" />
+              <div class="card-body">
+                <h2 class="text-center">Sweden</h2>
+                <p class="card-text text-center">Malmö</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div></div>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
+                  <small class="text-body-secondary">2022</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/travel/ireland.jpg" alt="ireland photo" />
+              <div class="card-body">
+                <h2 class="text-center">Ireland</h2>
+                <p class="card-text text-center">
+                  Dublin - Galway - Sligo - Limerick
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div></div>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
+                  <small class="text-body-secondary">2022</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/travel/slovenia.jpg" alt="slovenia photo" />
+              <div class="card-body">
+                <h2 class="text-center">Slovenia</h2>
+                <p class="card-text text-center">Ljubljana - Bled - Bohinj</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div></div>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
+                  <small class="text-body-secondary">2022</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./assets/travel/montenegro.jpg"
+                alt="montenegro photo"
+              />
+              <div class="card-body">
+                <h2 class="text-center">Montenegro</h2>
+                <p class="card-text text-center">Kotor - Budva - Perast</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div></div>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
+                  <small class="text-body-secondary">2022</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/travel/croatia.jpg" alt="croatia photo" />
+              <div class="card-body">
+                <h2 class="text-center">Croatia</h2>
+                <p class="card-text text-center">
+                  Split - Hvar - Dubrovnik - Zagreb
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div></div>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
+                  <small class="text-body-secondary">2022</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/travel/paris.jpg" alt="paris photo" />
+              <div class="card-body">
+                <h2 class="text-center">France</h2>
+                <p class="card-text text-center">Paris - Nancy - Metz</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div></div>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
+                  <small class="text-body-secondary">2016, 2022</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/travel/london.jpg" alt="london photo" />
+              <div class="card-body">
+                <h2 class="text-center">United Kingdom</h2>
+                <p class="card-text text-center">London</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div></div>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
+                  <small class="text-body-secondary">2015 - 2022</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/travel/madrid.jpg" alt="madrid photo" />
+              <div class="card-body">
+                <h2 class="text-center">Spain</h2>
+                <p class="card-text text-center">
+                  Madrid - Barcelona - Cudillero - Santander - Bilbao
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div></div>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
+                  <small class="text-body-secondary">2012 - 2021</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/travel/zakopane.jpg" alt="zakopane photo" />
+              <div class="card-body">
+                <h2 class="text-center">Poland</h2>
+                <p class="card-text text-center">
+                  Auschwitz - Zakopane - Warsaw - Gdansk - Poznan - Krakow -
+                  Wroclaw
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                    data-bs-target="#polandModal"
+                    data-bs-toggle="modal"
+                  >
+                    Details
+                  </button>
+                  <div id="polandModalContent"></div>
+                  <small class="text-body-secondary">2019 - 2020</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/travel/austria.jpg" alt="austria photo" />
+              <div class="card-body">
+                <h2 class="text-center">Austria</h2>
+                <p class="card-text text-center">Salzburg</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div></div>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
+                  <small class="text-body-secondary">2019</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/travel/prague.jpg" alt="prague photo" />
+              <div class="card-body">
+                <h2 class="text-center">Czech Republic</h2>
+                <p class="card-text text-center">Prague</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div></div>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
+                  <small class="text-body-secondary">2019</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/travel/budapest.jpg" alt="budapest photo" />
+              <div class="card-body">
+                <h2 class="text-center">Hungary</h2>
+                <p class="card-text text-center">Budapest</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div></div>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
+                  <small class="text-body-secondary">2019</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/travel/oslo.jpg" alt="oslo photo" />
+              <div class="card-body">
+                <h2 class="text-center">Norway</h2>
+                <p class="card-text text-center">Oslo</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div></div>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
+                  <small class="text-body-secondary">2019</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/travel/amsterdam.jpg" alt="amsterdam photo" />
+              <div class="card-body">
+                <h2 class="text-center">The Netherlands</h2>
+                <p class="card-text text-center">
+                  Amsterdam - Rotterdam - Utrecht
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                    data-bs-target="#netherlandsModal"
+                    data-bs-toggle="modal"
+                  >
+                    Details
+                  </button>
+                  <div id="netherlandsModalContent"></div>
+                  <small class="text-body-secondary">2019</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/travel/belgium.jpg" alt="belgium photo" />
+              <div class="card-body">
+                <h2 class="text-center">Belgium</h2>
+                <p class="card-text text-center">
+                  Antwerp - Brussels - Gent - Bruges - Lovaina - Lier - Mechelen
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                    data-bs-target="#belgiumModal"
+                    data-bs-toggle="modal"
+                  >
+                    Details
+                  </button>
+                  <div id="belgiumModalContent"></div>
+                  <small class="text-body-secondary">2019</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/travel/route66.jpg" alt="route66 photo" />
+              <div class="card-body">
+                <h2 class="text-center">USA - Route 66</h2>
+                <p class="card-text text-center">
+                  Chicago - Springfield IL - St. Louis - Springfield MO - Tulsa
+                  - Oklahoma - Amarillo - Tucumcari - Santa Fe - Albuquerque -
+                  Gallup - Flagstaff - Grand Canyon - Kingman - Las Vegas -
+                  Needles - Los Angeles
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                    data-bs-target="#usaModal"
+                    data-bs-toggle="modal"
+                  >
+                    Details
+                  </button>
+                  <div id="usaModalContent"></div>
+                  <small class="text-body-secondary">2017</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2>Ireland</h2>
-									</header>
-									<a class="image fit"><img src="images/ireland.jpg" alt="" /></a>
-									<p style="text-align:center">Dublin, Galway, Sligo, Limerick (2022)</p>
-								</article>
-								<article>
-									<header>
-										<h2>Slovenia</h2>
-									</header>
-									<a class="image fit"><img src="images/slovenia.jpg" alt="" /></a>
-									<p style="text-align:center">Ljubljana, Bled, Bohinj (2022)</p>
-								</article>
-								<article>
-									<header>
-										<h2>Montenegro</h2>
-									</header>
-									<a class="image fit"><img src="images/montenegro.jpg" alt="" /></a>
-									<p style="text-align:center">Kotor, Budva, Perast (2022)</p>
-								</article>
-								<article>
-									<header>
-										<h2>Croatia</h2>
-									</header>
-									<a class="image fit"><img src="images/croatia.jpg" alt="" /></a>
-									<p style="text-align:center">Split, Hvar, Dubrovnik, Zagreb (2022)</p>
-								</article>
-								<article>
-									<header>
-										<h2>Luxembourg</h2>
-									</header>
-									<a class="image fit"><img src="images/luxembourg.jpg" alt="" /></a>
-									<p style="text-align:center">Luxembourg, Ettelbruck, Diekirch (2022)</p>
-								</article>
-                                <article>
-									<header>
-										<h2>France</h2>
-									</header>
-									<a class="image fit"><img src="images/paris.jpg" alt="" /></a>
-									<p style="text-align:center">Nancy, Metz (2022)<br />
-										Paris (2016)</p>
-								</article>
-								<article>
-									<header>
-										<h2>Spain</h2>
-									</header>
-									<a class="image fit"><img src="images/madrid.jpg" alt="" /></a>
-									<p style="text-align:center">Madrid (2021, 2019)<br />
-										Cudillero, Santander, Bilbao (2016)<br />
-										Barcelona (2015, 2012)</p>
-								</article>
-								<article>
-									<header>
-										<h2>Italy</h2>
-									</header>
-									<a class="image fit"><img src="images/venice.jpg" alt="" /></a>
-									<p style="text-align:center">Venice (2020)<br />
-										Tropea (2018)</p>
-								</article>
-								<article>
-									<header>
-										<h2><a href="poland.html">Poland</a></h2>
-									</header>
-									<a class="image fit" href="poland.html"><img src="images/zakopane.jpg" alt="" /></a>
-									<p style="text-align:center">Auschwitz, Zakopane (2020)<br />
-                                    	Warsaw, Gdansk, Poznan, Krakow, Wroclaw (2019)</p>
-									
-								</article>
-								<article>
-									<header>
-										<h2>Germany</h2>
-									</header>
-									<a class="image fit"><img src="images/berlin.jpg" alt="" /></a>
-									<p style="text-align:center">Berlin (2020)<br />
-										Munich, Dresden, Leipzig (2019)</p>
-								</article>
-								<article>
-									<header>
-										<h2>Austria</h2>
-									</header>
-									<a class="image fit"><img src="images/austria.jpg" alt="" /></a>
-									<p style="text-align:center">Salzburg (2019)</p>
-								</article>
-								<article>
-									<header>
-										<h2>Czech Republic</h2>
-									</header>
-									<a class="image fit"><img src="images/prague.jpg" alt="" /></a>
-									<p style="text-align:center">Prague (2019)</p>
-								</article>
-								<article>
-									<header>
-										<h2>Hungary</h2>
-									</header>
-									<a class="image fit"><img src="images/budapest.jpg" alt="" /></a>
-									<p style="text-align:center">Budapest (2019)</p>
-								</article>
-                                <article>
-									<header>
-										<h2>Norway</h2>
-									</header>
-									<a class="image fit"><img src="images/oslo.jpg" alt="" /></a>
-									<p style="text-align:center">Oslo (2019)</p>
-								</article>
-                                <article>
-									<header>
-										<h2><a href="belgium_netherlands.html">The Netherlands</a></h2>
-									</header>
-									<a class="image fit" href="belgium_netherlands.html"><img src="images/amsterdam.jpg" alt="" /></a>
-									<p style="text-align:center">Amsterdam, Rotterdam, Utrecht (2019)</p>
-								</article>
-                                <article>
-									<header>
-										<h2><a href="belgium_netherlands.html">Belgium</a></h2>
-									</header>
-									<a class="image fit" href="belgium_netherlands.html"><img src="images/belgium.jpg" alt="" /></a>
-									<p style="text-align:center">Antwerp, Brussels, Gent, Bruges (2019)</p>
-								</article>
-                                <article>
-									<header>
-										<h2><a href="usa.html">USA - Route 66</a></h2>
-									</header>
-									<a href="usa.html" class="image fit"><img src="images/route66.jpg" alt="" /></a>
-									<p style="text-align:center">Chicago, Springfield IL, St. Louis, Springfield MO, Tulsa, Oklahoma, Amarillo, Tucumcari, Santa Fe, Albuquerque, Gallup, Flagstaff, Grand Canyon, Kingman, Las Vegas, Needles, Los Angeles (2017)</p>
-								</article>
-                                <article>
-									<header>
-										<h2>United Kingdom</h2>
-									</header>
-									<a class="image fit"><img src="images/london.jpg" alt="" /></a>
-									<p style="text-align:center">London (2010, 2015)</p>
-								</article>
-							</section>
-					</div>
+    <!-- Footer -->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top"
+      >
+        <span class="mb-3 mb-md-0 text-body-secondary"
+          >© Inês Soares | Web Developer</span
+        >
+      </footer>
+    </div>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Inês Soares</li><li>Software Engineer</li></ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

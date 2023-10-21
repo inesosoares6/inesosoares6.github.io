@@ -1,102 +1,242 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Ines Soares | Sports</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="images/logo.jpg">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inês Soares</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="icon" href="assets/IS.png" />
+  </head>
+  <body class="bg-gradient">
+    <!-- Header -->
+    <nav
+      class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
+      aria-label="Fourth navbar example"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample04"
+          aria-controls="navbarsExample04"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-house-door-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./work.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./academic.html">Academic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./travel.html">Travel</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./sports.html"
+                >Sports</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.linkedin.com/in/ines-soares"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  fill="currentColor"
+                  class="bi bi-linkedin"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://github.com/inesosoares6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://drive.google.com/drive/folders/19vQcMkU6VvguD7HfsRRtJksrcpaIfRVu?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  fill="currentColor"
+                  class="bi bi-file-person-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="sports.html" class="logo">Sports</a>
-					</header>
+    <!-- Content -->
+    <div class="container quote text-secondary px-4 pt-5 text-center">
+      <div class="py-5">
+        <h1 class="display-5 text-white">
+          <em
+            >“I'd rather regret the risks that didn't work out than the chances
+            I didn't take at all.”</em
+          >
+        </h1>
+        <div class="col mx-auto d-flex justify-content-center">
+          <p class="fs-5 mb-4">Simone Biles</p>
+        </div>
+      </div>
+    </div>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html" class="icon solid fa-home"></a></li>
-							<li><a href="work.html">Professional</a></li>
-							<li><a href="academic.html">Academic</a></li>
-							<li><a href="experiences.html">Experiences</a></li>
-							<li class="active"><a href="sports.html">Sports</a></li>
-							<li><a href="travel.html">Travel</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/ines-soares" class="icon brands fa-linkedin-in" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/inesosoares6" class="icon brands fa-github"><span class="label" target="_blank" rel="noopener noreferrer">GitHub</span></a></li>
-							<li><a href="https://drive.google.com/drive/folders/19vQcMkU6VvguD7HfsRRtJksrcpaIfRVu?usp=sharing" class="icon brands fa-google-drive" target="_blank" rel="noopener noreferrer"><span class="label">Drive</span></a></li>
-						</ul>
-					</nav>
+    <div class="container px-4 pb-3" id="featured-3">
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          >
+            <img
+              src="./assets/volleyball.svg"
+              alt="Volleyball icon"
+              width="40px"
+            />
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Volleyball</h3>
+          <p class="lead">Since 2006</p>
+          <ul>
+            <li>Leixões Sport Club (2023/2024)</li>
+            <li>Ala de Nun'Álvares de Gondomar (2021-2023)</li>
+            <li>Grupo Desportivo e Cultural de Gueifães (2020/2021)</li>
+            <li>Ginásio Clube de Santo Tirso (2017-2019)</li>
+            <li>Boavista Futebol Clube (2016/2017)</li>
+            <li>Associação Académica de São Mamede (2006-2016)</li>
+            <ul>
+              <li>Team caption (2010-2015)</li>
+              <li>National champion twice (2012, 2013)</li>
+            </ul>
+          </ul>
+        </div>
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          >
+            <img src="./assets/gym.svg" alt="Gym icon" width="40px" />
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Gym</h3>
+          <p class="lead">Since 2016</p>
+          <ul>
+            <li>Strength Training</li>
+            <li>Cardio Training</li>
+            <li>Favorite group classes:</li>
+            <ul>
+              <li>Body Pump</li>
+              <li>Body Attack</li>
+              <li>RPM</li>
+              <li>Body Combat</li>
+              <li>HIIT (High-Intensity Interval Training)</li>
+            </ul>
+          </ul>
+        </div>
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          >
+            <img src="./assets/karate.svg" alt="Karate icon" width="40px" />
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Karate</h3>
+          <p class="lead">2002-2012</p>
+          <ul>
+            <li>Gojo-ryu | Brown belt</li>
+          </ul>
+          <p class="paragraph">
+            I started practicing Karate from a very young age (4 years old).
+            This sport taught me much more than just self-defense, I learnt
+            about respect, concentration, self-awareness, adaptability and
+            creativity. It was not just an entrance to the world of sport, but a
+            preparation to the future adult life that I would encounter.
+          </p>
+        </div>
+      </div>
+    </div>
 
-				<!-- Main -->
-					<div id="main">
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">Since 2006</span>
-										<h2>Volleyball</h2>
-									</header>
-									<a class="image fit"><img src="images/volleyball.jpg" alt="" /></a>
-									<p> - Ala de Nun'Álvares de Gondomar (2021-2023)<br/>
-									 - Grupo Desportivo e Cultural de Gueifães (2020/2021)<br/>
-                                     - Ginásio Clube de Santo Tirso (2017-2019)<br/>
-                                     - Boavista Futebol Clube (2016/2017)<br/>
-                                     - Associação Académica de São Mamede (2006-2016)<br/>
-                                    <hr />
-                                    Team caption (2010-2015)<br/>
-                                    National champion twice (2012, 2013)</p>
-								</article>
-                                <article>
-									<header>
-										<span class="date">Since 2016</span>
-										<h2>Gym</h2>
-									</header>
-									<a class="image fit"><img src="images/gym.jpg" alt="" /></a>
-									<p>Strength Training<br/>
-                                    Cardio Traning<br/>
-                                    Favourite group classes:<br/>
-                                    - Body Pump<br/> - Body Attack<br/> - RPM<br/> - Body Combat<br/> - HIIT (High-Intensity Interval Traning)</p>
-								</article>
-								<article>
-									<header>
-										<span class="date">2002 - 2012</span>
-										<h2>Karate</h2>
-									</header>
-									<a class="image fit"><img src="images/karate.jpg" alt="" /></a>
-									<p style="text-align:center">Gojo-ryu | Brown belt</p>
-								</article>
-								<article>
-									<header>
-										<span class="date">Since 2012</span>
-										<h2>Beach Volleyball</h2>
-									</header>
-									<a class="image fit"><img src="images/beach_volleyball.jpg" alt="" /></a>
-									<p style="text-align:center">Summer tournaments</p>
-								</article>
-							</section>
-					</div>
+    <!-- Footer -->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top"
+      >
+        <span class="mb-3 mb-md-0 text-body-secondary"
+          >© Inês Soares | Web Developer</span
+        >
+      </footer>
+    </div>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Inês Soares</li><li>Software Engineer</li></ul>
-					</div>
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
