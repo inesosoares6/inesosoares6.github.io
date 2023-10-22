@@ -1,6 +1,5 @@
 # inesosoares6.github.io
-Personal website to showcase my curriculum, academic background personal projects, courses, and interests (sports and traveling).
-
+Personal website to showcase my curriculum, academic background personal projects, courses, and interests (sports and traveling):
 [https://inesosoares6.github.io/](https://inesosoares6.github.io/)
 
 <p align="center">
