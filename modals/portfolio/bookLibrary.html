@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <div id="libraryModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div
+          class="d-flex justify-content-between p-3 align-items-center border-bottom"
+        >
+          <div class="d-flex w-100 justify-content-between align-items-center">
+            <h3
+              class="modal-title d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="./assets/library-icon.png"
+                alt="Book Library Logo"
+                width="35"
+                class="me-3"
+                style="border-radius: 50%"
+              />Book Library
+            </h3>
+            <div class="me-3">
+              <img
+                src="./assets/vuejs.svg"
+                alt="VueJs logo"
+                width="25"
+                class="me-2"
+              />
+              <img
+                class="me-2"
+                src="./assets/vuetifyjs.svg"
+                alt="Vuetify Logo"
+                width="25"
+              />
+              <img src="./assets/firebase.svg" alt="Firebase Logo" width="25" />
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div class="container py-3 px-5">
+            <div class="row row-cols-1 row-cols-lg-2">
+              <div class="col col-lg-8">
+                <h2>Context</h2>
+                <p>
+                  Me and my father are passionate about reading and sometimes
+                  our tastes in books collide. To avoid buying books that we
+                  already had at home, I decided to create a mobile app to store
+                  our books and distinguish to which library they belong (mine
+                  or my father's). So, now we can save the money we would waste
+                  on duplicated books and buy new ones.
+                </p>
+                <h2>Requirements</h2>
+                <ul>
+                  <li>Create a database for the home library;</li>
+                  <li>
+                    Have a way to quickly add books: scan the ISBN bar code and
+                    automatically retrieve the book data;
+                  </li>
+                  <li>
+                    Have a fallback plan when the API does not find the book
+                    data: manually insert the data;
+                  </li>
+                  <li>
+                    Have a fallback plan when the camera is not able to read the
+                    barcode: manually insert the ISBN code;
+                  </li>
+                  <li>
+                    Add filters to easily search for books within the app;
+                  </li>
+                  <li>Possibility to have multiple libraries.</li>
+                </ul>
+                <h2>Development</h2>
+                <h6>Technologies:</h6>
+                <ul>
+                  <li>Frameworks: VueJS and Vuetify</li>
+                  <li>State Management: Pinia</li>
+                  <li>Database: Google Firebase (Realtime Database)</li>
+                </ul>
+              </div>
+              <div class="col col-lg-4 d-flex justify-content-center">
+                <img class="image-crop" src="" alt="App demo gif" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>

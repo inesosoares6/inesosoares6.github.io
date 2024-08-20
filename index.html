@@ -15,6 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script>
       $(function () {
+        $("#libraryModalContent").load("./modals/portfolio/bookLibrary.html");
         $("#shoppingModalContent").load("./modals/portfolio/shoppingList.html");
         $("#workoutsModalContent").load("./modals/portfolio/workoutsApp.html");
         $("#bucketListModalContent").load("./modals/portfolio/bucketList.html");
@@ -179,8 +180,120 @@
 
     <!-- Portfolio Section -->
     <div class="container px-4" id="custom-cards">
-      <div class="row row-cols-1 row-cols-lg-3 g-4 pt-5 pb-2">
-        <div class="col portfolio-col">
+      <div
+        class="row row-cols-1 row-cols-lg-3 g-4 pt-5 d-flex justify-content-center"
+      >
+        <div class="col portfolio-col nutri-card">
+          <a
+            class="text-body-secondary"
+            href="https://www.teresalemosnutricao.pt/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="text-decoration: none; color: inherit"
+          >
+            <div
+              class="card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="
+                background-image: url('./assets/nutri.png');
+                cursor: pointer;
+              "
+            >
+              <div
+                class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1"
+              >
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  TL Nutrição
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="./assets/vuejs.svg" alt="VueJs logo" width="25" />
+                    <img
+                      src="./assets/vuetifyjs.svg"
+                      alt="Vuetify logo"
+                      width="25"
+                    />
+                    <img
+                      src="./assets/firebase.svg"
+                      alt="Firebase"
+                      width="25"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col portfolio-col invictus-card">
+          <a
+            class="text-body-secondary"
+            href="https://www.invictusclinic.pt/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="text-decoration: none; color: inherit"
+          >
+            <div
+              class="card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="
+                background-image: url('./assets/invictus.png');
+                cursor: pointer;
+              "
+            >
+              <div
+                class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1"
+              >
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  Invictus Clinic
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="./assets/vuejs.svg" alt="VueJs logo" width="25" />
+                    <img
+                      src="./assets/vuetifyjs.svg"
+                      alt="Vuetify logo"
+                      width="25"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-lg-3 g-4 pt-4 pb-2">
+        <div class="col portfolio-col library-card">
+          <div
+            class="card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('./assets/library.png');
+              cursor: pointer;
+            "
+            data-bs-target="#libraryModal"
+            data-bs-toggle="modal"
+          >
+            <div
+              class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1"
+            >
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Book Library
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="./assets/vuejs.svg" alt="VueJs logo" width="25" />
+                  <img
+                    src="./assets/vuetifyjs.svg"
+                    alt="Vuetify logo"
+                    width="25"
+                  />
+                  <img src="./assets/firebase.svg" alt="Firebase" width="25" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="libraryModalContent"></div>
+        </div>
+
+        <div class="col portfolio-col shopping-card">
           <div
             class="card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="
@@ -208,7 +321,7 @@
           <div id="shoppingModalContent"></div>
         </div>
 
-        <div class="col portfolio-col">
+        <div class="col portfolio-col workout-card">
           <div
             class="card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="
@@ -252,7 +365,7 @@
           <div id="workoutsModalContent"></div>
         </div>
 
-        <div class="col portfolio-col">
+        <div class="col portfolio-col travel-card">
           <div
             class="card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="
@@ -286,11 +399,10 @@
               </ul>
             </div>
           </div>
-        </div>
-        <div id="bucketListModalContent"></div>
-      </div>
 
-      <div class="row row-cols-1 row-cols-lg-2 g-4 pb-5 pt-2">
+          <div id="bucketListModalContent"></div>
+        </div>
+
         <div class="col portfolio-col chess-card">
           <div
             class="card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
@@ -379,9 +491,10 @@
               </ul>
             </div>
           </div>
+
+          <div id="electricModalContent"></div>
         </div>
       </div>
-      <div id="electricModalContent"></div>
     </div>
 
     <!-- Footer -->
