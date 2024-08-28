@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script>
+    const modal3 = document.querySelector("#workoutsModal");
+    const video3 = modal3.querySelector("video");
+
+    modal3.addEventListener("show.bs.modal", () => {
+      video3.play();
+    });
+
+    modal3.addEventListener("hide.bs.modal", () => {
+      video3.pause();
+    });
+  </script>
   <div id="workoutsModal" class="modal fade" tabindex="-1">
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
@@ -94,10 +106,11 @@
                 </p>
               </div>
               <div class="col col-lg-4 d-flex justify-content-center">
-                <img
+                <video
                   class="image-crop"
-                  src="./assets/workoutsApp.gif"
-                  alt="App demo gif"
+                  src="./assets/workoutsApp.mp4"
+                  loop
+                  alt="App demo video"
                 />
               </div>
             </div>
