@@ -151,7 +151,7 @@
 
     <!-- Hero Section -->
     <div class="container col-xxl-8 px-4 pt-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-3">
         <div class="col-10 col-sm-8 col-lg-6">
           <img
             src="./assets/photo-cover.jpg"
@@ -180,81 +180,78 @@
 
     <!-- Portfolio Section -->
     <div class="container px-4" id="custom-cards">
+      <div class="d-flex py-0 align-items-center">
+        <hr class="flex-grow-1 my-0" />
+
+        <span class="flex-shrink-1 px-3">
+          <h1 class="display-2">Portfolio</h1>
+        </span>
+
+        <hr class="flex-grow-1 my-0" />
+      </div>
       <div
-        class="row row-cols-1 row-cols-lg-3 g-4 pt-5 d-flex justify-content-center"
+        class="row row-cols-1 row-cols-lg-3 g-4 pt-3 d-flex justify-content-center"
       >
         <div class="col portfolio-col nutri-card">
           <a
-            class="text-body-secondary"
+            class="card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             href="https://www.teresalemosnutricao.pt/"
             target="_blank"
             rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit"
+            style="
+              text-decoration: none;
+              color: inherit;
+              background-image: url('./assets/nutri.png');
+              cursor: pointer;
+            "
           >
             <div
-              class="card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-              style="
-                background-image: url('./assets/nutri.png');
-                cursor: pointer;
-              "
+              class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1"
             >
-              <div
-                class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1"
-              >
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                  TL Nutrição
-                </h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img src="./assets/vuejs.svg" alt="VueJs logo" width="25" />
-                    <img
-                      src="./assets/vuetifyjs.svg"
-                      alt="Vuetify logo"
-                      width="25"
-                    />
-                    <img
-                      src="./assets/firebase.svg"
-                      alt="Firebase"
-                      width="25"
-                    />
-                  </li>
-                </ul>
-              </div>
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">TL Nutrição</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="./assets/vuejs.svg" alt="VueJs logo" width="25" />
+                  <img
+                    src="./assets/vuetifyjs.svg"
+                    alt="Vuetify logo"
+                    width="25"
+                  />
+                  <img src="./assets/firebase.svg" alt="Firebase" width="25" />
+                </li>
+              </ul>
             </div>
           </a>
         </div>
         <div class="col portfolio-col invictus-card">
           <a
-            class="text-body-secondary"
+            class="card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             href="https://www.invictusclinic.pt/"
             target="_blank"
             rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit"
+            style="
+              text-decoration: none;
+              color: inherit;
+              background-image: url('./assets/invictus.png');
+              cursor: pointer;
+            "
           >
             <div
-              class="card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-              style="
-                background-image: url('./assets/invictus.png');
-                cursor: pointer;
-              "
+              class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1"
             >
-              <div
-                class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1"
-              >
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                  Invictus Clinic
-                </h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img src="./assets/vuejs.svg" alt="VueJs logo" width="25" />
-                    <img
-                      src="./assets/vuetifyjs.svg"
-                      alt="Vuetify logo"
-                      width="25"
-                    />
-                  </li>
-                </ul>
-              </div>
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Invictus Clinic
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="./assets/vuejs.svg" alt="VueJs logo" width="25" />
+                  <img
+                    src="./assets/vuetifyjs.svg"
+                    alt="Vuetify logo"
+                    width="25"
+                  />
+                </li>
+              </ul>
             </div>
           </a>
         </div>
@@ -503,7 +500,7 @@
         class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top"
       >
         <span class="mb-3 mb-md-0 text-body-secondary"
-          >© Inês Soares | Web Developer</span
+          >2024 © Inês Soares | Web Developer</span
         >
       </footer>
     </div>
