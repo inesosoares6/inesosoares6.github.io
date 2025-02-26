@@ -10,4 +10,4 @@ Personal website to showcase my curriculum, academic background personal project
 Technologies used:
 
 - Frambework: Bootstrap
-- Programming languages: Javascript and CSS
+- Programming languages: HTML, Javascript and CSS
