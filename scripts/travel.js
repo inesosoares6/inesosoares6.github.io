@@ -155,7 +155,7 @@ const travelData = [
   },
 ];
 
-function createTravelCards() {
+const createTravelCards = () => {
   const container = document.querySelector(".album .container .row");
 
   travelData.forEach((country) => {
@@ -192,13 +192,13 @@ function createTravelCards() {
                     </div>
                 </div>
             `;
-            
+
     container.insertAdjacentHTML("beforeend", cardHTML);
 
     if (country?.target) {
       $(`#${country.id}`).load(`./modals/travel/${country.page}.html`);
     }
   });
-}
+};
 
 document.addEventListener("DOMContentLoaded", createTravelCards);

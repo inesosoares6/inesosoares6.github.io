@@ -73,11 +73,11 @@ const getIconImages = (icons) =>
     .join("");
 
 const createPortfolioCards = () => {
-  const websitesContainer = document.querySelector(".container .websites");
-  const appsContainer = document.querySelector(".container .apps");
+  const websitesContainer = document.querySelector(".websites");
+  const appsContainer = document.querySelector(".apps");
 
   websites.forEach((website) => {
-    const cardHTML = `
+    const websiteCardHTML = `
         <div class="col portfolio-col">
           <a
             class="card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
@@ -107,11 +107,11 @@ const createPortfolioCards = () => {
         </div>
       `;
 
-    websitesContainer.insertAdjacentHTML("beforeend", cardHTML);
+    websitesContainer.insertAdjacentHTML("beforeend", websiteCardHTML);
   });
 
   apps.forEach((app) => {
-    const cardHTML = `
+    const appCardHTML = `
         <div class="col portfolio-col">
           <div
             class="card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
@@ -141,7 +141,7 @@ const createPortfolioCards = () => {
           <div id="${app.id}"></div>
         </div>`;
 
-    appsContainer.insertAdjacentHTML("beforeend", cardHTML);
+    appsContainer.insertAdjacentHTML("beforeend", appCardHTML);
 
     $(`#${app.id}`).load(`./modals/portfolio/${app.page}.html`);
   });
