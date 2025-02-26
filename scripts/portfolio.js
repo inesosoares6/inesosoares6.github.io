@@ -64,14 +64,13 @@ const apps = [
   },
 ];
 
-const getIconImages = (icons) => {
-  let iconsHtml = "";
-  icons.forEach((icon) => {
-    iconsHtml += `
-                  <img src="./assets/${icon}.svg" alt="${icon} logo" width="25" />`;
-  });
-  return iconsHtml;
-};
+const getIconImages = (icons) =>
+  icons
+    .map(
+      (icon) =>
+        `<img src="./assets/${icon}.svg" alt="${icon} logo" width="25" />`
+    )
+    .join("");
 
 const createPortfolioCards = () => {
   const websitesContainer = document.querySelector(".container .websites");
