@@ -192,6 +192,7 @@ function createTravelCards() {
                     </div>
                 </div>
             `;
+            
     container.insertAdjacentHTML("beforeend", cardHTML);
 
     if (country?.target) {

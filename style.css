@@ -52,15 +52,6 @@ p {
 }
 
 @media (min-width: 1000px) {
-  .chess-card {
-    display: flex;
-    justify-content: end;
-  }
-  .electric-card {
-    display: flex;
-    justify-content: start;
-  }
-
   .quote {
     width: 50%;
   }
