@@ -155,7 +155,6 @@ const travelData = [
   },
 ];
 
-// Function to create cards dynamically
 function createTravelCards() {
   const container = document.querySelector(".album .container .row");
 
@@ -163,14 +162,31 @@ function createTravelCards() {
     const cardHTML = `
                 <div class="col">
                     <div class="card shadow-sm">
-                        <img src="./assets/travel/${country.image}" alt="${country.country} photo" loading="lazy">
+                        <img src="./assets/travel/${country.image}" alt="${
+      country.country
+    } photo" loading="lazy">
                         <div class="card-body">
                             <h2 class="text-center">${country.country}</h2>
-                            <p class="card-text text-center">${country.places}</p>
+                            <p class="card-text text-center">${
+                              country.places
+                            }</p>
                             <div class="d-flex justify-content-between align-items-center">
-                              
+                              ${
+                                country?.target
+                                  ? `
+                                <button
+                                type="button"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#${country.target}"
+                                >Details</button>
+                              `
+                                  : ""
+                              }
                               <div id="${country.id}"></div>
-                              <small class="text-body-secondary">${country.years}</small>
+                              <small class="text-body-secondary">${
+                                country.years
+                              }</small>
                             </div>
                         </div>
                     </div>
@@ -179,10 +195,9 @@ function createTravelCards() {
     container.insertAdjacentHTML("beforeend", cardHTML);
 
     if (country?.target) {
-      $(`#${country.target}`).load(`./modals/travel/${country.page}.html`);
+      $(`#${country.id}`).load(`./modals/travel/${country.page}.html`);
     }
   });
 }
 
-// Call the function when the page loads
 document.addEventListener("DOMContentLoaded", createTravelCards);
