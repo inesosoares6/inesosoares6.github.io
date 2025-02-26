@@ -7,23 +7,12 @@
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
     />
     <link href="./style.css" rel="stylesheet" />
     <link rel="icon" href="assets/IS.png" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script>
-      $(function () {
-        $("#usaModalContent").load("./modals/travel/usa.html");
-        $("#polandModalContent").load("./modals/travel/poland.html");
-        $("#belgiumModalContent").load("./modals/travel/belgium.html");
-        $("#netherlandsModalContent").load("./modals/travel/netherlands.html");
-      });
-    </script>
   </head>
+
   <body class="bg-gradient">
-    <!-- Header -->
     <nav
       class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
       aria-label="Fourth navbar example"
@@ -66,12 +55,7 @@
               <a class="nav-link" href="./academic.html">Academic</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="./travel.html"
-                >Travel</a
-              >
+              <a class="nav-link active" href="./travel.html">Travel</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./sports.html">Sports</a>
@@ -146,461 +130,39 @@
       </div>
     </nav>
 
-    <!-- Map -->
     <div class="container">
-      <!-- https://www.mapchart.net/world.html -->
-      <img src="./assets/travel/world-map.png" alt="World Map" class="w-100" />
+      <img
+        src="./assets/travel/world-map.png"
+        alt="World Map"
+        class="w-100"
+        loading="lazy"
+      />
     </div>
 
     <div class="container text-center pt-3">
       <h1 class="travel-title">WANDERLUST</h1>
     </div>
 
-    <!-- Album -->
     <div class="album py-5">
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./assets/travel/italy.jpg" alt="italy photo" />
-              <div
-                class="card-body d-flex flex-column"
-                style="min-height: 164px; justify-content: space-between"
-              >
-                <h2 class="text-center">Italy</h2>
-                <p class="card-text text-center">
-                  Rome - Bergamo - Venice - Tropea
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div></div>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
-                  <small class="text-body-secondary">2018 - 2025</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img
-                src="./assets/travel/switzerland.png"
-                alt="switzerland photo"
-              />
-              <div class="card-body">
-                <h2 class="text-center">Switzerland</h2>
-                <p class="card-text text-center">
-                  Zermatt - Montreaux - Bern - Thun - Interlaken <br />
-                  Wengen - Lauterbrunnen - Interlaken - Grindelwald
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div></div>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
-                  <small class="text-body-secondary">2023 - 2024</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./assets/travel/paris.jpg" alt="paris photo" />
-              <div class="card-body">
-                <h2 class="text-center">France</h2>
-                <p class="card-text text-center">
-                  Colmar - Strasbourg <br />
-                  Nancy - Metz - Paris
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div></div>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
-                  <small class="text-body-secondary">2016 - 2024</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./assets/travel/greece.jpg" alt="greece photo" />
-              <div
-                class="card-body d-flex flex-column"
-                style="min-height: 164px; justify-content: space-between"
-              >
-                <h2 class="text-center">Greece</h2>
-                <p class="card-text text-center">
-                  Athens - Paros - Antiparos - Naxos - Amorgos
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div></div>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
-                  <small class="text-body-secondary">2024</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./assets/travel/madrid.jpg" alt="madrid photo" />
-              <div class="card-body">
-                <h2 class="text-center">Spain</h2>
-                <p class="card-text text-center">
-                  Madrid - Seville <br />
-                  Cudillero - Santander - Bilbao - Barcelona
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div></div>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
-                  <small class="text-body-secondary">2012 - 2024</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./assets/travel/albania.png" alt="albania photo" />
-              <div
-                class="card-body d-flex flex-column"
-                style="min-height: 164px; justify-content: space-between"
-              >
-                <h2 class="text-center">Albania</h2>
-                <p class="card-text text-center">
-                  Himarë - Saranda - Ksamil - Gjirokastër - Berat - Tirana
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div></div>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
-                  <small class="text-body-secondary">2023</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img
-                src="./assets/travel/luxembourg.png"
-                alt="luxembourg photo"
-              />
-              <div class="card-body">
-                <h2 class="text-center">Luxembourg</h2>
-                <p class="card-text text-center">
-                  Luxembourg - Ettelbruck - Diekirch
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div></div>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
-                  <small class="text-body-secondary">2022 - 2023</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./assets/travel/berlin.jpg" alt="berlin photo" />
-              <div class="card-body">
-                <h2 class="text-center">Germany</h2>
-                <p class="card-text text-center">
-                  Berlin - Munich - Dresden - Leipzig - Trier
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div></div>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
-                  <small class="text-body-secondary">2019 - 2023</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img
-                src="./assets/travel/copenhagen.png"
-                alt="copenhagen photo"
-              />
-              <div class="card-body">
-                <h2 class="text-center">Denmark</h2>
-                <p class="card-text text-center">Copenhagen</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div></div>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
-                  <small class="text-body-secondary">2022</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./assets/travel/malmo.png" alt="malmo photo" />
-              <div class="card-body">
-                <h2 class="text-center">Sweden</h2>
-                <p class="card-text text-center">Malmö</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div></div>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
-                  <small class="text-body-secondary">2022</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./assets/travel/ireland.jpg" alt="ireland photo" />
-              <div class="card-body">
-                <h2 class="text-center">Ireland</h2>
-                <p class="card-text text-center">
-                  Dublin - Galway - Sligo - Limerick
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div></div>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
-                  <small class="text-body-secondary">2022</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./assets/travel/slovenia.jpg" alt="slovenia photo" />
-              <div class="card-body">
-                <h2 class="text-center">Slovenia</h2>
-                <p class="card-text text-center">Ljubljana - Bled - Bohinj</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div></div>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
-                  <small class="text-body-secondary">2022</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img
-                src="./assets/travel/montenegro.jpg"
-                alt="montenegro photo"
-              />
-              <div class="card-body">
-                <h2 class="text-center">Montenegro</h2>
-                <p class="card-text text-center">Kotor - Budva - Perast</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div></div>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
-                  <small class="text-body-secondary">2022</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./assets/travel/croatia.jpg" alt="croatia photo" />
-              <div class="card-body">
-                <h2 class="text-center">Croatia</h2>
-                <p class="card-text text-center">
-                  Split - Hvar - Dubrovnik - Zagreb
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div></div>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
-                  <small class="text-body-secondary">2022</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./assets/travel/london.jpg" alt="london photo" />
-              <div class="card-body">
-                <h2 class="text-center">United Kingdom</h2>
-                <p class="card-text text-center">London</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div></div>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
-                  <small class="text-body-secondary">2015 - 2022</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./assets/travel/zakopane.jpg" alt="zakopane photo" />
-              <div class="card-body">
-                <h2 class="text-center">Poland</h2>
-                <p class="card-text text-center">
-                  Auschwitz - Zakopane - Warsaw - Gdansk <br />
-                  Poznan - Krakow - Wroclaw
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <button
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    data-bs-target="#polandModal"
-                    data-bs-toggle="modal"
-                  >
-                    Details
-                  </button>
-                  <div id="polandModalContent"></div>
-                  <small class="text-body-secondary">2019 - 2020</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./assets/travel/austria.jpg" alt="austria photo" />
-              <div
-                class="card-body d-flex flex-column"
-                style="min-height: 172px; justify-content: space-between"
-              >
-                <h2 class="text-center">Austria</h2>
-                <p class="card-text text-center">Salzburg</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div></div>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
-                  <small class="text-body-secondary">2019</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./assets/travel/prague.jpg" alt="prague photo" />
-              <div
-                class="card-body d-flex flex-column"
-                style="min-height: 172px; justify-content: space-between"
-              >
-                <h2 class="text-center">Czech Republic</h2>
-                <p class="card-text text-center">Prague</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div></div>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
-                  <small class="text-body-secondary">2019</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./assets/travel/budapest.jpg" alt="budapest photo" />
-              <div
-                class="card-body d-flex flex-column"
-                style="min-height: 150px; justify-content: space-between"
-              >
-                <h2 class="text-center">Hungary</h2>
-                <p class="card-text text-center">Budapest</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div></div>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
-                  <small class="text-body-secondary">2019</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./assets/travel/oslo.jpg" alt="oslo photo" />
-              <div
-                class="card-body d-flex flex-column"
-                style="min-height: 150px; justify-content: space-between"
-              >
-                <h2 class="text-center">Norway</h2>
-                <p class="card-text text-center">Oslo</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div></div>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
-                  <small class="text-body-secondary">2019</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./assets/travel/amsterdam.jpg" alt="amsterdam photo" />
-              <div class="card-body">
-                <h2 class="text-center">The Netherlands</h2>
-                <p class="card-text text-center">
-                  Amsterdam - Rotterdam - Utrecht
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <button
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    data-bs-target="#netherlandsModal"
-                    data-bs-toggle="modal"
-                  >
-                    Details
-                  </button>
-                  <div id="netherlandsModalContent"></div>
-                  <small class="text-body-secondary">2019</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./assets/travel/belgium.jpg" alt="belgium photo" />
-              <div
-                class="card-body d-flex flex-column"
-                style="min-height: 221px; justify-content: space-between"
-              >
-                <h2 class="text-center">Belgium</h2>
-                <p class="card-text text-center">
-                  Antwerp - Brussels - Gent - Bruges <br />
-                  Lovaina - Lier - Mechelen
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <button
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    data-bs-target="#belgiumModal"
-                    data-bs-toggle="modal"
-                  >
-                    Details
-                  </button>
-                  <div id="belgiumModalContent"></div>
-                  <small class="text-body-secondary">2019</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="./assets/travel/route66.jpg" alt="route66 photo" />
-              <div class="card-body">
-                <h2 class="text-center">USA - Route 66</h2>
-                <p class="card-text text-center">
-                  Chicago - Springfield IL - St. Louis - Springfield MO - Tulsa
-                  - Oklahoma - Amarillo - Tucumcari - Santa Fe - Albuquerque -
-                  Gallup - Flagstaff - Grand Canyon - Kingman - Las Vegas -
-                  Needles - Los Angeles
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <button
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    data-bs-target="#usaModal"
-                    data-bs-toggle="modal"
-                  >
-                    Details
-                  </button>
-                  <div id="usaModalContent"></div>
-                  <small class="text-body-secondary">2017</small>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- Cards will be inserted here -->
         </div>
       </div>
     </div>
 
-    <!-- Footer -->
-    <div class="container">
-      <footer
-        class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top"
-      >
-        <span class="mb-3 mb-md-0 text-body-secondary"
-          >2024 © Inês Soares | Web Developer</span
-        >
-      </footer>
-    </div>
+    <script src="./scripts/footer.js"></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/travel.js"></script>
+    <script>
+      $(function () {
+        $("#usaModalContent").load("./modals/travel/usa.html");
+        $("#polandModalContent").load("./modals/travel/poland.html");
+        $("#belgiumModalContent").load("./modals/travel/belgium.html");
+        $("#netherlandsModalContent").load("./modals/travel/netherlands.html");
+      });
+    </script>
   </body>
 </html>
