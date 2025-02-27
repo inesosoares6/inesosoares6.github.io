@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script>
+    const modal1 = document.querySelector("#libraryModal");
+    const video1 = modal1.querySelector("video");
+
+    modal1.addEventListener("show.bs.modal", () => {
+      video1.play();
+    });
+
+    modal1.addEventListener("hide.bs.modal", () => {
+      video1.pause();
+    });
+  </script>
+
   <div id="libraryModal" class="modal fade" tabindex="-1">
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
