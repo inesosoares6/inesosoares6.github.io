@@ -63,9 +63,7 @@ $(function () {
       activeLink.addClass("active");
     }
   });
-});
 
-$(function () {
   $("#footer-placeholder").load("./shared/footer.html", () => {
     document.body.innerHTML = document.body.innerHTML.replace(
       /\{year\}/g,
