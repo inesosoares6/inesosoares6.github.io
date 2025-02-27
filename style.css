@@ -30,10 +30,6 @@ p {
   text-align: justify;
 }
 
-.contact-image {
-  width: 20%;
-}
-
 .contact-div-image {
   display: flex;
   justify-content: center;
@@ -61,10 +57,6 @@ p {
     justify-content: center;
     width: 50%;
     margin-bottom: 5rem;
-  }
-
-  .contact-image {
-    width: 40%;
   }
 
   .travel-title {
