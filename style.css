@@ -30,12 +30,6 @@ p {
   text-align: justify;
 }
 
-.contact-div-image {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
 .travel-title {
   letter-spacing: 10px;
   font-size: 40px;
@@ -50,13 +44,6 @@ p {
 @media (min-width: 1000px) {
   .quote {
     width: 50%;
-  }
-
-  .contact-div-image {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    margin-bottom: 5rem;
   }
 
   .travel-title {
@@ -74,23 +61,11 @@ p {
     width: 75%;
     height: 444px;
   }
-
-  .image-crop-horizontal {
-    /* object-fit: none;  */
-    object-position: center;
-    height: 400px;
-  }
 }
 
 @media (max-width: 1000px) {
   .iframe-style {
     width: 75%;
-    height: 200px;
-  }
-
-  .image-crop-horizontal {
-    /* object-fit: none;  */
-    object-position: center;
     height: 200px;
   }
 }
