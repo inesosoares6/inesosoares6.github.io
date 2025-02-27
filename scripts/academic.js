@@ -7,8 +7,7 @@ const studies = [
     text: "Master Degree in Electrical and Computer Engineering",
     bullets: [
       "Automation branch with Robotics specialization",
-      "Integrated Master",
-      "Grade 17 out of 20",
+      "Integrated Master - Grade 17 out of 20",
     ],
   },
   {
@@ -18,7 +17,7 @@ const studies = [
     image: "inesctec.png",
     id: "thesisModalContent",
     page: "thesis",
-    text: "Programming Robots by Demonstration using Augmented Reality",
+    text: "Programming Robots by Demonstration using AR",
     bullets: [
       `<span
                     class="text-modal-trigger"
@@ -144,7 +143,7 @@ const createAcademicCards = () => {
   studies.forEach((course) => {
     const cardHTML = `<div class="col-md-6">
           <div
-            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="min-height: 264px"
           >
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-primary-emphasis"
@@ -153,11 +152,9 @@ const createAcademicCards = () => {
               <div class="row d-flex justify-content-between">
                 <div class="col-9 col-lg-11">
                   <h3 class="mb-0">${course.title}</h3>
-                  ${
-                    course?.date
-                      ? `<div class="mb-1 text-body-secondary">${course.date}</div>`
-                      : ""
-                  }
+                  <div class="mb-1 text-body-secondary">${
+                    course?.date ?? ""
+                  }</div>
                 </div>
                 <div class="col-auto small-logo">
                   <img
@@ -169,7 +166,7 @@ const createAcademicCards = () => {
               </div>
 
               <p class="card-text mb-auto" style="text-align: start">
-                ${course?.text ?? " "}
+                ${course?.text ?? ""}
               </p>
               
               <ul>
@@ -184,7 +181,9 @@ const createAcademicCards = () => {
               />
             </div>
           </div>
-          <div id="${course?.id}"></div>
+
+          ${course?.id ? `<div id="${course.id}"></div>` : ""}
+          
         </div>`;
 
     studiesContainer.insertAdjacentHTML("beforeend", cardHTML);
