@@ -1,17 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script>
-    const modal4 = document.querySelector("#bucketListModal");
-    const video4 = modal4.querySelector("video");
-
-    modal4.addEventListener("show.bs.modal", () => {
-      video4.play();
-    });
-
-    modal4.addEventListener("hide.bs.modal", () => {
-      video4.pause();
-    });
-  </script>
   <div id="bucketListModal" class="modal fade" tabindex="-1">
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
@@ -107,9 +95,10 @@
                 <video
                   class="image-crop"
                   src="./assets/videos/bucketlistApp.mp4"
+                  autoplay
                   loop
                   alt="App demo video"
-                />
+                ></video>
               </div>
             </div>
           </div>

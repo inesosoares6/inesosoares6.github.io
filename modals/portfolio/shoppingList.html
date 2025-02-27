@@ -1,17 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script>
-    const modal2 = document.querySelector("#shoppingModal");
-    const video2 = modal2.querySelector("video");
-
-    modal2.addEventListener("show.bs.modal", () => {
-      video2.play();
-    });
-
-    modal2.addEventListener("hide.bs.modal", () => {
-      video2.pause();
-    });
-  </script>
   <div id="shoppingModal" class="modal fade" tabindex="-1">
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
@@ -116,9 +104,10 @@
                 <video
                   class="image-crop"
                   src="./assets/videos/shoppingList.mp4"
+                  autoplay
                   loop
                   alt="App demo video"
-                />
+                ></video>
               </div>
             </div>
           </div>
