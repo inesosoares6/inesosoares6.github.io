@@ -121,7 +121,7 @@ const getBadges = (names) =>
               <img
                 class="mx-1"
                 width="16"
-                src="./assets/${name.toLowerCase().replace(".", "")}.svg"
+                src="./assets/icons/${name.toLowerCase().replace(".", "")}.svg"
                 alt="${name} icon"
               />${name}
             </span>`

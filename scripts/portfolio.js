@@ -68,7 +68,7 @@ const getIconImages = (icons) =>
   icons
     .map(
       (icon) =>
-        `<img src="./assets/${icon}.svg" alt="${icon} logo" width="25" />`
+        `<img src="./assets/icons/${icon}.svg" class="me-1" alt="${icon} logo" width="25" />`
     )
     .join("");
 
