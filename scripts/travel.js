@@ -1,7 +1,7 @@
 const travelData = [
   {
     country: "Italy",
-    places: "Rome - Bergamo - Venice - Tropea",
+    places: "Rome - Bergamo <br /> Venice - Tropea",
     years: "2018 - 2025",
     image: "italy.jpg",
   },
