@@ -1,5 +1,5 @@
 $(function () {
-  $("#navbar-placeholder").load("./shared/navbar.html", function () {
+  $("#navbar-placeholder").load("./shared/navbar.html", () => {
     const currentPage = window.location.pathname.split("/").pop();
 
     // Match with './' prefix
@@ -16,5 +16,10 @@ $(function () {
 });
 
 $(function () {
-  $("#footer-placeholder").load("./shared/footer.html");
+  $("#footer-placeholder").load("./shared/footer.html", () => {
+    document.body.innerHTML = document.body.innerHTML.replace(
+      /\{year\}/g,
+      new Date().getFullYear()
+    );
+  });
 });
