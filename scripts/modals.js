@@ -1,9 +1,6 @@
-const modals = [
-  "libraryModal",
-  "shoppingModal",
-  "workoutsModal",
-  "bucketListModal",
-];
+import { apps } from "./../data/portfolio-data.js";
+
+const modals = apps.map((app) => app.target);
 
 $(document).ready(() => {
   modals.forEach((id) => {
