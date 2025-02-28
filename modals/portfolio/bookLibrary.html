@@ -129,34 +129,6 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-      $(document).ready(function () {
-        // Initialize modal with options
-        const modal1 = document.querySelector("#libraryModal");
-        const video1 = modal1.querySelector("video");
-
-        // Create modal instance with event handlers
-        const modal = new bootstrap.Modal(modal1, {
-          backdrop: true,
-          keyboard: true,
-          focus: true,
-        });
-
-        // Add event listeners to the modal element itself
-        modal1.addEventListener("show.bs.modal", function (e) {
-          // Play video when modal starts showing
-          if (video1 && typeof video1.play === "function") {
-            video1.play();
-          }
-        });
-
-        // Add hide event listener
-        modal1.addEventListener("hide.bs.modal", function (e) {
-          if (video1) {
-            video1.pause();
-          }
-        });
-      });
-    </script>
+    <script src="./scripts/modals.js"></script>
   </body>
 </html>
