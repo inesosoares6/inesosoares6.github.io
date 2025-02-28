@@ -1,121 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script>
-    const modal3 = document.querySelector("#workoutsModal");
-    const video3 = modal3.querySelector("video");
-
-    modal3.addEventListener("show.bs.modal", () => {
-      video3.play();
-    });
-
-    modal3.addEventListener("hide.bs.modal", () => {
-      video3.pause();
-    });
-  </script>
-  <div id="workoutsModal" class="modal fade" tabindex="-1">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div
-          class="d-flex justify-content-between p-3 align-items-center border-bottom"
-        >
-          <div class="d-flex w-100 justify-content-between align-items-center">
-            <h3
-              class="modal-title d-flex justify-content-center align-items-center"
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="workoutsModal" class="modal fade" tabindex="-1">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div
+            class="d-flex justify-content-between p-3 align-items-center border-bottom"
+          >
+            <div
+              class="d-flex w-100 justify-content-between align-items-center"
             >
-              <img
-                src="./assets/workouts-logo.png"
-                alt="Workouts Logo"
-                width="35"
-                class="me-3"
-              />Workouts App
-            </h3>
-            <div class="me-3">
-              <img
-                src="./assets/icons/vuejs.svg"
-                alt="VueJs logo"
-                width="25"
-                class="me-2"
-              />
-              <img
-                src="./assets/icons/vuetifyjs.svg"
-                alt="VueJs logo"
-                width="25"
-              />
-            </div>
-          </div>
-
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-          ></button>
-        </div>
-        <div class="modal-body">
-          <div class="container py-3 px-5">
-            <div class="row row-cols-1 row-cols-lg-2">
-              <div class="col col-lg-8">
-                <h2>Context</h2>
-                <p>
-                  The idea of developing this app solved a specific issue: the
-                  assistant coach of my volleyball team used to give us warmup
-                  exercises with several papers in his hand. So, offering him an
-                  app to store the warmup exercises at the Secret Santa gift
-                  exchange would be a good idea. From that time, the app
-                  requirements increased and the app developed from just a place
-                  to store warmups to a complete gym assistant.
-                </p>
-                <h2>Requirements</h2>
-                <ul>
-                  <li>Store gym workouts without internet usage;</li>
-                  <li>Generate random workouts;</li>
-                  <li>Share workout plans;</li>
-                  <li>Implement timer and Tabata timer;</li>
-                  <li>
-                    Record the user evolution in gym exercises and health
-                    (weight, body fat and muscle);
-                  </li>
-                  <li>Define and store objectives;</li>
-                  <li>
-                    Show to the user some statistics of the workouts made.
-                  </li>
-                </ul>
-                <h2>Development</h2>
-                <h6>Technologies:</h6>
-                <ul>
-                  <li>Frameworks: VueJS and Vuetify</li>
-                  <li>State Management: Pinia</li>
-                  <li>Database: localStorage</li>
-                </ul>
-                <p>
-                  Source code on Github
-                  <a
-                    href="https://github.com/inesosoares6/warmup-app-vue"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="link-tag"
-                  >
-                    <img
-                      src="./assets/icons/github.svg"
-                      class="ms-1"
-                      alt="Github logo"
-                      width="16"
-                    />
-                  </a>
-                </p>
+              <h3
+                class="modal-title d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="./assets/workouts-logo.png"
+                  alt="Workouts Logo"
+                  width="35"
+                  class="me-3"
+                />Workouts App
+              </h3>
+              <div class="me-3">
+                <img
+                  src="./assets/icons/vuejs.svg"
+                  alt="VueJs logo"
+                  width="25"
+                  class="me-2"
+                />
+                <img
+                  src="./assets/icons/vuetifyjs.svg"
+                  alt="VueJs logo"
+                  width="25"
+                />
               </div>
-              <div class="col col-lg-4 d-flex justify-content-center">
-                <video
-                  class="image-crop"
-                  src="./assets/videos/workoutsApp.mp4"
-                  autoplay
-                  loop
-                  alt="App demo video"
-                ></video>
+            </div>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container py-3 px-5">
+              <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col col-lg-8">
+                  <h2>Context</h2>
+                  <p>
+                    The idea of developing this app solved a specific issue: the
+                    assistant coach of my volleyball team used to give us warmup
+                    exercises with several papers in his hand. So, offering him
+                    an app to store the warmup exercises at the Secret Santa
+                    gift exchange would be a good idea. From that time, the app
+                    requirements increased and the app developed from just a
+                    place to store warmups to a complete gym assistant.
+                  </p>
+                  <h2>Requirements</h2>
+                  <ul>
+                    <li>Store gym workouts without internet usage;</li>
+                    <li>Generate random workouts;</li>
+                    <li>Share workout plans;</li>
+                    <li>Implement timer and Tabata timer;</li>
+                    <li>
+                      Record the user evolution in gym exercises and health
+                      (weight, body fat and muscle);
+                    </li>
+                    <li>Define and store objectives;</li>
+                    <li>
+                      Show to the user some statistics of the workouts made.
+                    </li>
+                  </ul>
+                  <h2>Development</h2>
+                  <h6>Technologies:</h6>
+                  <ul>
+                    <li>Frameworks: VueJS and Vuetify</li>
+                    <li>State Management: Pinia</li>
+                    <li>Database: localStorage</li>
+                  </ul>
+                  <p>
+                    Source code on Github
+                    <a
+                      href="https://github.com/inesosoares6/warmup-app-vue"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="link-tag"
+                    >
+                      <img
+                        src="./assets/icons/github.svg"
+                        class="ms-1"
+                        alt="Github logo"
+                        width="16"
+                      />
+                    </a>
+                  </p>
+                </div>
+                <div class="col col-lg-4 d-flex justify-content-center">
+                  <video
+                    class="image-crop"
+                    src="./assets/videos/workoutsApp.mp4"
+                    loop
+                    alt="App demo video"
+                  ></video>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Initialize modal with options
+        const modal3 = document.querySelector("#workoutsModal");
+        const video3 = modal3.querySelector("video");
+
+        // Create modal instance with event handlers
+        const modal = new bootstrap.Modal(modal3, {
+          backdrop: true,
+          keyboard: true,
+          focus: true,
+        });
+
+        // Add event listeners to the modal element itself
+        modal3.addEventListener("show.bs.modal", function (e) {
+          // Play video when modal starts showing
+          if (video3 && typeof video3.play === "function") {
+            video3.play();
+          }
+        });
+
+        // Add hide event listener
+        modal3.addEventListener("hide.bs.modal", function (e) {
+          if (video3) {
+            video3.pause();
+          }
+        });
+      });
+    </script>
+  </body>
 </html>

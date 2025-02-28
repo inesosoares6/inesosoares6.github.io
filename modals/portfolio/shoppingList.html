@@ -1,130 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script>
-    const modal2 = document.querySelector("#shoppingModal");
-    const video2 = modal2.querySelector("video");
-
-    modal2.addEventListener("show.bs.modal", () => {
-      video2.play();
-    });
-
-    modal2.addEventListener("hide.bs.modal", () => {
-      video2.pause();
-    });
-  </script>
-  <div id="shoppingModal" class="modal fade" tabindex="-1">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div
-          class="d-flex justify-content-between p-3 align-items-center border-bottom"
-        >
-          <div class="d-flex w-100 justify-content-between align-items-center">
-            <h3
-              class="modal-title d-flex justify-content-center align-items-center"
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="shoppingModal" class="modal fade" tabindex="-1">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div
+            class="d-flex justify-content-between p-3 align-items-center border-bottom"
+          >
+            <div
+              class="d-flex w-100 justify-content-between align-items-center"
             >
-              <img
-                src="./assets/shopping-icon.png"
-                alt="Shopping List Logo"
-                width="35"
-                class="me-3"
-              />Shopping List
-            </h3>
-            <div class="me-3">
-              <img
-                src="./assets/icons/vuejs.svg"
-                alt="VueJs logo"
-                width="25"
-                class="me-2"
-              />
-              <img
-                class="me-2"
-                src="./assets/icons/quasar.svg"
-                alt="Quasar Logo"
-                width="25"
-              />
-              <img
-                src="./assets/icons/firebase.svg"
-                alt="Firebase Logo"
-                width="25"
-              />
-            </div>
-          </div>
-
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-          ></button>
-        </div>
-        <div class="modal-body">
-          <div class="container py-3 px-5">
-            <div class="row row-cols-1 row-cols-lg-2">
-              <div class="col col-lg-8">
-                <h2>Context</h2>
-                <p>
-                  This app was created to solve an existing problem in my home.
-                  So, before this app, we had a paper in our house where we
-                  would write the things to buy at the supermarket. But the
-                  problem was that most of the time we would forget the paper at
-                  home, or we wanted to add something and we were not home. To
-                  solve all those problems, my parents asked me to create an app
-                  that would be our shopping list and it was shared by all of us
-                  in real time.
-                </p>
-                <h2>Requirements</h2>
-                <ul>
-                  <li>
-                    Shared shopping list (each member would have an account);
-                  </li>
-                  <li>To have a catalog to store the products;</li>
-                  <li>Ability to add, remove, or update items on the list;</li>
-                  <li>
-                    To have a list of favorite products that could be easily
-                    added (for example, products that we need to buy weekly);
-                  </li>
-                  <li>Ability to create multiple lists;</li>
-                  <li>Ability to filter products when searching.</li>
-                </ul>
-                <h2>Development</h2>
-                <h6>Technologies:</h6>
-                <ul>
-                  <li>Frameworks: VueJS and Quasar</li>
-                  <li>State Management: Pinia</li>
-                  <li>
-                    Database: Google Firebase (Authentication and Realtime
-                    Database)
-                  </li>
-                </ul>
-                <p>
-                  Source code on Github
-                  <a
-                    href="https://github.com/inesosoares6/shopping-list-v2"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="link-tag"
-                  >
-                    <img
-                      src="./assets/icons/github.svg"
-                      class="ms-1"
-                      alt="Github logo"
-                      width="16"
-                    />
-                  </a>
-                </p>
+              <h3
+                class="modal-title d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="./assets/shopping-icon.png"
+                  alt="Shopping List Logo"
+                  width="35"
+                  class="me-3"
+                />Shopping List
+              </h3>
+              <div class="me-3">
+                <img
+                  src="./assets/icons/vuejs.svg"
+                  alt="VueJs logo"
+                  width="25"
+                  class="me-2"
+                />
+                <img
+                  class="me-2"
+                  src="./assets/icons/quasar.svg"
+                  alt="Quasar Logo"
+                  width="25"
+                />
+                <img
+                  src="./assets/icons/firebase.svg"
+                  alt="Firebase Logo"
+                  width="25"
+                />
               </div>
-              <div class="col col-lg-4 d-flex justify-content-center">
-                <video
-                  class="image-crop"
-                  src="./assets/videos/shoppingList.mp4"
-                  autoplay
-                  loop
-                  alt="App demo video"
-                ></video>
+            </div>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container py-3 px-5">
+              <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col col-lg-8">
+                  <h2>Context</h2>
+                  <p>
+                    This app was created to solve an existing problem in my
+                    home. So, before this app, we had a paper in our house where
+                    we would write the things to buy at the supermarket. But the
+                    problem was that most of the time we would forget the paper
+                    at home, or we wanted to add something and we were not home.
+                    To solve all those problems, my parents asked me to create
+                    an app that would be our shopping list and it was shared by
+                    all of us in real time.
+                  </p>
+                  <h2>Requirements</h2>
+                  <ul>
+                    <li>
+                      Shared shopping list (each member would have an account);
+                    </li>
+                    <li>To have a catalog to store the products;</li>
+                    <li>
+                      Ability to add, remove, or update items on the list;
+                    </li>
+                    <li>
+                      To have a list of favorite products that could be easily
+                      added (for example, products that we need to buy weekly);
+                    </li>
+                    <li>Ability to create multiple lists;</li>
+                    <li>Ability to filter products when searching.</li>
+                  </ul>
+                  <h2>Development</h2>
+                  <h6>Technologies:</h6>
+                  <ul>
+                    <li>Frameworks: VueJS and Quasar</li>
+                    <li>State Management: Pinia</li>
+                    <li>
+                      Database: Google Firebase (Authentication and Realtime
+                      Database)
+                    </li>
+                  </ul>
+                  <p>
+                    Source code on Github
+                    <a
+                      href="https://github.com/inesosoares6/shopping-list-v2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="link-tag"
+                    >
+                      <img
+                        src="./assets/icons/github.svg"
+                        class="ms-1"
+                        alt="Github logo"
+                        width="16"
+                      />
+                    </a>
+                  </p>
+                </div>
+                <div class="col col-lg-4 d-flex justify-content-center">
+                  <video
+                    class="image-crop"
+                    src="./assets/videos/shoppingList.mp4"
+                    loop
+                    alt="App demo video"
+                  ></video>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Initialize modal with options
+        const modal2 = document.querySelector("#shoppingModal");
+        const video2 = modal2.querySelector("video");
+
+        // Create modal instance with event handlers
+        const modal = new bootstrap.Modal(modal2, {
+          backdrop: true,
+          keyboard: true,
+          focus: true,
+        });
+
+        // Add event listeners to the modal element itself
+        modal2.addEventListener("show.bs.modal", function (e) {
+          // Play video when modal starts showing
+          if (video2 && typeof video2.play === "function") {
+            video2.play();
+          }
+        });
+
+        // Add hide event listener
+        modal2.addEventListener("hide.bs.modal", function (e) {
+          if (video2) {
+            video2.pause();
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
