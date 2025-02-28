@@ -8,7 +8,10 @@ const fillContent = (id) => {
   title.innerHTML = modals[id].title;
 
   const appIcon = document.querySelector(".app-icon");
-  appIcon.setAttribute("src", `./assets/${modals[id].appIcon}`);
+  appIcon.setAttribute(
+    "src",
+    `./assets/apps-icons/${modals[id].appIcon}-icon.png`
+  );
 
   const icons = document.querySelector(".header-icons");
   icons.innerHTML = getIconImages(modals[id].icons);

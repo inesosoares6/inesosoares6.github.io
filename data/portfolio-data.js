@@ -61,7 +61,7 @@ export const apps = [
 export const modals = {
   libraryModalContent: {
     title: "Book Library",
-    appIcon: "library-icon.png",
+    appIcon: "library",
     icons: ["vuejs", "vuetifyjs", "firebase"],
     content:
       "Me and my father are passionate about reading and sometimes our tastes in books collide. To avoid buying books that we already had at home, I decided to create a mobile app to store our books and distinguish to which library they belong (mine or my father's). So, now we can save the money we would waste on duplicated books and buy new ones.",
@@ -83,7 +83,7 @@ export const modals = {
   },
   shoppingModalContent: {
     title: "Shopping List",
-    appIcon: "shopping-icon.png",
+    appIcon: "shopping",
     icons: ["vuejs", "quasar", "firebase"],
     content:
       "This app was created to solve an existing problem in my home. So, before this app, we had a paper in our house where we would write the things to buy at the supermarket. But the problem was that most of the time we would forget the paper at home, or we wanted to add something and we were not home. To solve all those problems, my parents asked me to create an app that would be our shopping list and it was shared by all of us in real time.",
@@ -105,7 +105,7 @@ export const modals = {
   },
   workoutsModalContent: {
     title: "Workouts App",
-    appIcon: "workouts-logo.png",
+    appIcon: "workouts",
     icons: ["vuejs", "quasar"],
     content:
       "The idea of developing this app solved a specific issue: the assistant coach of my volleyball team used to give us warmup exercises with several papers in his hand. So, offering him an app to store the warmup exercises at the Secret Santa gift exchange would be a good idea. From that time, the app requirements increased and the app developed from just a place to store warmups to a complete gym assistant.",
@@ -128,7 +128,7 @@ export const modals = {
   },
   bucketListModalContent: {
     title: "Bucket List App",
-    appIcon: "shoppingList_icon.png",
+    appIcon: "travel",
     icons: ["kotlin"],
     content:
       "I love to travel and explore the world. So, when I started to learn web development, an app to combine my passion for travel and the skills that I was learning was the most logical option. I wanted to, not only, create something that would motivate me to plan new trips, but also to have a place where I could revisit my past trips and remember beautiful moments. This is why the Bucket List App came into existence! It's basically an app to travel the world with just your phone.",
@@ -145,7 +145,7 @@ export const modals = {
   },
   chessModalContent: {
     title: "Progr(Ch)ess",
-    appIcon: "chess-icon.png",
+    appIcon: "chess",
     icons: ["unity", "cardboard"],
     content:
       "Progr(Ch)ess is a program to promote success that, combining programming, robotics, and chess, explores countless benefits of the oldest board game, through attractive and innovative dynamics. Using a strong playful component, this project aims to contribute to the development of capacities associated with computational thinking and digital literacy, fostering transversal skills in the curriculum. The transferability of chess, programming, and robotics allows not only to reinforce the domain of computing but also other domains of learning (e.g., reading, writing, mathematics, expressions, etc.). Thus, it is important to make learning more and more meaningful and contextualized, challenging students to develop multidisciplinary competencies, and reinforcing confidence in their capabilities. The target audience for this project is elementary school students.",
@@ -159,7 +159,7 @@ export const modals = {
   },
   electricModalContent: {
     title: "Electric Vehicle Charging Management System",
-    appIcon: "electric-icon.png",
+    appIcon: "electric",
     icons: ["kotlin", "firebase"],
     content:
       "This application was developed in the context of a college project where we needed to implement a system to manage electric vehicle charging. I was studying Electrical and Computer Engineering (automation and robotics), but interested in learning about web development. Therefore, I volunteered to develop the app for our project. This way, I could be responsible for a crucial part of the project and explore these new skills. Back then, I was far from knowing that web development would become my passion.",
