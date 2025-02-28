@@ -1,12 +1,5 @@
 import { websites, apps } from "./../data/portfolio-data.js";
-
-const getIconImages = (icons) =>
-  icons
-    .map(
-      (icon) =>
-        `<img src="./assets/icons/${icon}.svg" class="me-1" alt="${icon} logo" width="25" />`
-    )
-    .join("");
+import { getIconImages } from "./../helpers/utils.js";
 
 const createPortfolioCards = () => {
   const websitesContainer = document.querySelector(".websites");
@@ -50,13 +43,13 @@ const createPortfolioCards = () => {
     const appCardHTML = `
         <div class="col portfolio-col">
           <div
-            class="card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            class="card-${
+              app.id
+            } card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="
               background-image: url('./assets/${app.image}');
               cursor: pointer;
             "
-            data-bs-toggle="modal"
-            data-bs-target="#${app.target}"
           >
             <div
               class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1"
