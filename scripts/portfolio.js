@@ -72,7 +72,7 @@ const createPortfolioCards = () => {
 
     appsContainer.insertAdjacentHTML("beforeend", appCardHTML);
 
-    $(`#${app.id}`).load(`./modals/portfolio/${app.page}.html`);
+    $(`#${app.id}`).load("./modals/portfolio/app-modal-template.html");
   });
 };
 

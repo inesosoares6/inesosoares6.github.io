@@ -1,5 +1,5 @@
-import { apps, modals } from "./../data/portfolio-data.js";
-import { getIconImages } from "./../helpers/utils.js";
+import { apps, modals } from "../data/portfolio-data.js";
+import { getIconImages } from "../helpers/utils.js";
 
 const ids = apps.map((app) => app.id);
 

@@ -1,4 +1,4 @@
-import { pages, socials } from "./../data/shared-data.js";
+import { pages, socials } from "../data/shared-data.js";
 
 const createNavBarCards = () => {
   const navBarContainer = document.querySelector(".navbar-nav");
