@@ -30,38 +30,41 @@ const fillContent = (id) => {
     .join("");
 
   const repo = document.querySelector(".github-link");
-  repo.setAttribute("href", modals[id].repo);
+  repo.setAttribute(
+    "href",
+    `https://github.com/inesosoares6/${modals[id].repo}`
+  );
 
-  const link = document.querySelector(".video-demo");
+  const video = document.querySelector(".video-demo");
   const textCol = document.querySelector(".text-col");
   const textRow = document.querySelector(".text-row");
-  if (modals[id]?.link) {
+  if (modals[id]?.video) {
     textCol.setAttribute("class", "text-col col col-lg-8");
     textRow.setAttribute("class", "text-row row row-cols-1 row-cols-lg-2");
-    link.setAttribute(
+    video.setAttribute(
       "class",
       "video-demo col col-lg-4 d-flex justify-content-center"
     );
-    if (modals[id].link.split(".").at(-1) === "mp4") {
-      link.innerHTML = `<video
+    if (modals[id].video.split(".").at(-1) === "mp4") {
+      video.innerHTML = `<video
                   class="video-demo image-crop"
-                  src="${modals[id].link}"
+                  src="./assets/portfolio/videos/${modals[id].video}"
                   loop
                   alt="App demo video"
                 ></video>`;
       addVideoEvents();
     } else {
-      link.innerHTML = ` <img
+      video.innerHTML = ` <img
                   class="image-crop"
-                  src="${modals[id].link}"
+                  src="./assets/portfolio/videos/${modals[id].link}"
                   alt="App demo gif"
                 />`;
     }
   } else {
     textCol.setAttribute("class", "text-col");
     textRow.setAttribute("class", "text-row");
-    link.setAttribute("class", "video-demo");
-    link.innerHTML = "";
+    video.setAttribute("class", "video-demo");
+    video.innerHTML = "";
   }
 };
 

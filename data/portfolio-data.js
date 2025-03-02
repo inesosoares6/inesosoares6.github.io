@@ -78,8 +78,8 @@ export const modals = {
       "State Management: Pinia",
       "Database: Google Firebase (Realtime Database)",
     ],
-    link: "./assets/videos/bookLibrary.mp4",
-    repo: "https://github.com/inesosoares6/book-library",
+    video: "bookLibrary.mp4",
+    repo: "book-library",
   },
   shoppingModalContent: {
     title: "Shopping List",
@@ -100,8 +100,8 @@ export const modals = {
       "State Management: Pinia",
       "Database: Google Firebase (Authentication and Realtime Database)",
     ],
-    link: "./assets/videos/shoppingList.mp4",
-    repo: "https://github.com/inesosoares6/shopping-list-v2",
+    video: "shoppingList.mp4",
+    repo: "shopping-list-v2",
   },
   workoutsModalContent: {
     title: "Workouts App",
@@ -123,8 +123,8 @@ export const modals = {
       "State Management: Pinia",
       "Database: localStorage",
     ],
-    link: "./assets/videos/workoutsApp.mp4",
-    repo: "https://github.com/inesosoares6/workouts-app",
+    video: "workoutsApp.mp4",
+    repo: "workouts-app",
   },
   bucketListModalContent: {
     title: "Bucket List App",
@@ -140,8 +140,8 @@ export const modals = {
       "To have a map with pins of the places I've been and want to go.",
     ],
     technologies: ["Programming Language: Kotlin"],
-    link: "./assets/videos/bucketlistApp.mp4",
-    repo: "https://github.com/inesosoares6/app_BucketList",
+    video: "bucketlistApp.mp4",
+    repo: "app_BucketList",
   },
   chessModalContent: {
     title: "Progr(Ch)ess",
@@ -155,7 +155,7 @@ export const modals = {
       "Each game should have several levels for the students to first learn the rules and then increase their skills along the game.",
     ],
     technologies: ["Unity Game Engine and Google Cardboard"],
-    repo: "https://github.com/inesosoares6/Progrchess",
+    repo: "Progrchess",
   },
   electricModalContent: {
     title: "Electric Vehicle Charging Management System",
@@ -176,7 +176,7 @@ export const modals = {
       "Programming Language: Kotlin",
       "Database: Google Firebase (Authentication and Cloud Firestore)",
     ],
-    link: "./assets/videos/seaiApp.gif",
-    repo: "https://github.com/inesosoares6/app_SEAI-G",
+    video: "seaiApp.gif",
+    repo: "app_SEAI-G",
   },
 };
