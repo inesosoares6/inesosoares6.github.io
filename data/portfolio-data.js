@@ -176,7 +176,7 @@ export const modals = {
       "Programming Language: Kotlin",
       "Database: Google Firebase (Authentication and Cloud Firestore)",
     ],
-    link: "./assets/seaiApp.gif",
+    link: "./assets/videos/seaiApp.gif",
     repo: "https://github.com/inesosoares6/app_SEAI-G",
   },
 };

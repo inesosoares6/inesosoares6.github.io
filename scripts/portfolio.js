@@ -16,7 +16,7 @@ const createPortfolioCards = () => {
             style="
               text-decoration: none;
               color: inherit;
-              background-image: url('./assets/${website.image}');
+              background-image: url('./assets/portfolio/${website.image}');
               cursor: pointer;
             "
           >
@@ -47,7 +47,7 @@ const createPortfolioCards = () => {
               app.id
             } card card-cover portfolio-card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="
-              background-image: url('./assets/${app.image}');
+              background-image: url('./assets/portfolio/${app.image}');
               cursor: pointer;
             "
           >

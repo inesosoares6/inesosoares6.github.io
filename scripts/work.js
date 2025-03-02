@@ -48,7 +48,7 @@ const createWorkCards = () => {
             </div>
             <div class="col small-logo">
               <img
-                src="./assets/${job.images.small}"
+                src="./assets/work/${job.images.small}"
                 alt="${job.company} logo"
                 width="200px"
                 class="logos"
@@ -66,7 +66,7 @@ const createWorkCards = () => {
         </div>
         <div class="col-md-5 ${index % 2 ? "order-md-1" : ""} work-logo">
           <img
-            src="./assets/${job.images.big}"
+            src="./assets/work/${job.images.big}"
             alt="${job.company} logo"
             width="400px"
             class="logos"
@@ -83,7 +83,7 @@ const createWorkCards = () => {
     const cardHTML = `
           <div class="col-lg-4">
             <img
-              src="./assets/${publication.icon}.png"
+              src="./assets/work/${publication.icon}.png"
               class="rounded-circle mb-2"
               alt="${publication.icon} icon"
               width="140px"

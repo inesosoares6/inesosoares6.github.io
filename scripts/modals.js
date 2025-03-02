@@ -10,7 +10,7 @@ const fillContent = (id) => {
   const appIcon = document.querySelector(".app-icon");
   appIcon.setAttribute(
     "src",
-    `./assets/apps-icons/${modals[id].appIcon}-icon.png`
+    `./assets/portfolio/${modals[id].appIcon}-icon.png`
   );
 
   const icons = document.querySelector(".header-icons");
