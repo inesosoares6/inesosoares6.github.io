@@ -1,5 +1,5 @@
 import { apps, modals } from "../data/portfolio-data.js";
-import { getIconImages } from "../helpers/utils.js";
+import { getIconImages, showModal } from "../helpers/utils.js";
 
 const ids = apps.map((app) => app.id);
 
@@ -68,17 +68,6 @@ const fillContent = (id) => {
   }
 };
 
-const showModal = (id) => {
-  const genericModal = document.getElementById("dynamicModal");
-
-  // Fill modal with correct content
-  fillContent(id);
-
-  // Show the modal
-  const modalInstance = new bootstrap.Modal(genericModal);
-  modalInstance.show();
-};
-
 const addVideoEvents = () => {
   // Initialize modal with options
   const modalContainer = document.getElementById("dynamicModal");
@@ -102,6 +91,8 @@ $(document).ready(() => {
   ids.forEach((id) => {
     document
       .querySelector(`.card-${id}`)
-      .addEventListener("click", () => showModal(id));
+      .addEventListener("click", () =>
+        showModal("dynamicModal", () => fillContent(id))
+      );
   });
 });

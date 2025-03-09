@@ -19,3 +19,15 @@ export const loadHTML = async (fileName) => {
     return null;
   }
 };
+
+
+export const showModal = (id, callback) => {
+  const genericModal = document.getElementById(id);
+
+  // Fill modal with correct content
+  callback();
+
+  // Show the modal
+  const modalInstance = new bootstrap.Modal(genericModal);
+  modalInstance.show();
+};

@@ -1,5 +1,5 @@
 import { trips, modals } from "../data/travel-data.js";
-import { loadHTML } from "./../helpers/utils.js";
+import { loadHTML, showModal } from "./../helpers/utils.js";
 
 const fillContent = (id) => {
   const title = document.querySelector(".modal-title");
@@ -23,23 +23,14 @@ const fillContent = (id) => {
   });
 };
 
-const showModal = (id) => {
-  const genericModal = document.getElementById("travelModal");
-
-  // Fill modal with correct content
-  fillContent(id);
-
-  // Show the modal
-  const modalInstance = new bootstrap.Modal(genericModal);
-  modalInstance.show();
-};
-
 const ids = trips.map((trip) => trip?.id).filter((value) => value);
 
 $(document).ready(() => {
   ids.forEach((id) => {
     document
       .querySelector(`.details-${id}`)
-      .addEventListener("click", () => showModal(id));
+      .addEventListener("click", () =>
+        showModal("travelModal", () => fillContent(id))
+      );
   });
 });
