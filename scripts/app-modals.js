@@ -70,7 +70,7 @@ const fillContent = (id) => {
 
 const addVideoEvents = () => {
   // Initialize modal with options
-  const modalContainer = document.getElementById("dynamicModal");
+  const modalContainer = document.getElementById("portfolioModal");
   const video = modalContainer.querySelector("video");
 
   if (!video) return;
@@ -92,7 +92,7 @@ $(document).ready(() => {
     document
       .querySelector(`.card-${id}`)
       .addEventListener("click", () =>
-        showModal("dynamicModal", () => fillContent(id))
+        showModal("portfolioModal", () => fillContent(id))
       );
   });
 });
