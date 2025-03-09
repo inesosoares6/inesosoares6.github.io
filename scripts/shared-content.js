@@ -31,7 +31,7 @@ const createNavBarCards = () => {
   });
 };
 
-$(function () {
+$(document).ready(() => {
   $("#navbar-placeholder").load("./shared/navbar.html", () => {
     createNavBarCards();
 
