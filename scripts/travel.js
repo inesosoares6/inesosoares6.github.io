@@ -17,13 +17,11 @@ const createTravelCards = () => {
                             }</p>
                             <div class="d-flex justify-content-between align-items-center">
                               ${
-                                country?.target
+                                country?.id
                                   ? `
                                 <button
                                 type="button"
-                                  class="btn btn-sm btn-outline-secondary"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#${country.target}"
+                                  class="details-${country.id} btn btn-sm btn-outline-secondary"
                                 >Details</button>
                               `
                                   : ""
@@ -40,8 +38,8 @@ const createTravelCards = () => {
 
     container.insertAdjacentHTML("beforeend", cardHTML);
 
-    if (country?.target) {
-      $(`#${country.id}`).load(`./modals/travel/${country.page}.html`);
+    if (country?.id) {
+      $(`#${country.id}`).load(`./modals/travel/travel-modal-template.html`);
     }
   });
 };
