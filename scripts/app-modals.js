@@ -1,8 +1,6 @@
 import { apps, modals } from "../data/portfolio-data.js";
 import { getIconImages, showModal } from "../helpers/utils.js";
 
-const ids = apps.map((app) => app.id);
-
 const fillContent = (id) => {
   const title = document.querySelector(".modal-title");
   title.innerHTML = modals[id].title;
@@ -86,6 +84,8 @@ const addVideoEvents = () => {
     video.pause();
   });
 };
+
+const ids = apps.map((app) => app.id);
 
 $(document).ready(() => {
   ids.forEach((id) => {
