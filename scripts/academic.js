@@ -22,7 +22,7 @@ const createAcademicCards = () => {
                 </div>
                 <div class="col-auto small-logo">
                   <img
-                    src="./assets/${course.image}"
+                    src="./assets/academic/${course.image}"
                     alt="${course.title} logo"
                     width="50"
                   />
