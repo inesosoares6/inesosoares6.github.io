@@ -1,20 +1,20 @@
 export const trips = [
   {
+    country: "Switzerland",
+    places:
+      "Zurich - Lucerne - Kandersteg- Lausanne <br/> Zermatt - Montreaux - Bern - Thun - Interlaken <br/> Wengen - Lauterbrunnen - Interlaken - Grindelwald",
+    years: "2023 - 2025",
+    image: "switzerland.png",
+  },
+  {
     country: "Italy",
-    places: "Rome - Bergamo <br /> Venice - Tropea",
+    places: "Rome - <i>Vatican City*</i> <br /> Bergamo - Venice <br /> Tropea",
     years: "2018 - 2025",
     image: "italy.jpg",
   },
   {
-    country: "Switzerland",
-    places:
-      "Zermatt - Montreaux - Bern - Thun - Interlaken<br/> Wengen - Lauterbrunnen - Interlaken - Grindelwald",
-    years: "2023 - 2024",
-    image: "switzerland.png",
-  },
-  {
     country: "France",
-    places: "Colmar - Strasbourg <br/> Nancy - Metz - Paris",
+    places: "Colmar - Strasbourg <br/> Nancy - Metz <br/> Paris",
     years: "2016 - 2024",
     image: "paris.jpg",
   },

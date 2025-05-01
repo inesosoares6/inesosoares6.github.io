@@ -48,7 +48,7 @@ $(document).ready(() => {
       if (activeLink.length) {
         activeLink.addClass("active");
       }
-    }, 100);
+    }, 500);
   });
 
   $("#footer-placeholder").load("./shared/footer.html", () => {
