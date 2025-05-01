@@ -8,7 +8,7 @@ export const websites = [
   {
     name: "Invictus Clinic",
     image: "invictus.png",
-    link: "https://www.invictusclinic.pt/",
+    link: "https://invictusclinic.pt/",
     icons: ["vuejs", "vuetifyjs"],
   },
 ];
