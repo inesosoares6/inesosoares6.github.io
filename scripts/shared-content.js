@@ -33,20 +33,22 @@ const createNavBarCards = () => {
 
 $(document).ready(() => {
   $("#navbar-placeholder").load("./shared/navbar.html", () => {
-    createNavBarCards();
+    setTimeout(() => {
+      createNavBarCards();
 
-    const currentPage = window.location.pathname.split("/").pop();
+      const currentPage = window.location.pathname.split("/").pop();
 
-    // Match with './' prefix
-    const activeLink = $(`.nav-link[href="./${currentPage}"]`);
+      // Match with './' prefix
+      const activeLink = $(`.nav-link[href="./${currentPage}"]`);
 
-    // Remove active class from all links
-    $(".nav-link").removeClass("active");
+      // Remove active class from all links
+      $(".nav-link").removeClass("active");
 
-    // Add active class to matched link
-    if (activeLink.length) {
-      activeLink.addClass("active");
-    }
+      // Add active class to matched link
+      if (activeLink.length) {
+        activeLink.addClass("active");
+      }
+    }, 100);
   });
 
   $("#footer-placeholder").load("./shared/footer.html", () => {
