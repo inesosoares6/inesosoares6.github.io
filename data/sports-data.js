@@ -8,9 +8,11 @@ export const sports = [
       {
         header: "Since 2024 - Running",
         bullets: [
+          "Porto Half Marathon 2025 <ul><li>21km - 1h41 @ 4'48''/km</li></ul>",
+          "Matosinhos Half Marathon 2025",
           "Porto Marathon 2024 <ul><li>42km - 3h44 @ 5'19''/km</li></ul>",
           "Famalicão Half Marathon 2024",
-          "Porto Half Marathon 2024 <ul><li>21km - 1h41 @ 4'48''/km</li></ul>",
+          "Porto Half Marathon 2024",
         ],
       },
       {
@@ -29,6 +31,7 @@ export const sports = [
       {
         header: "Since 2023 - <b>Coach</b>",
         bullets: [
+          "Ala de Nun'Álvares de Gondomar<ul><li>Sub-13 & Sub-11 (2025/26)</li></ul>",
           "Leixões Sport Club<ul><li>Head Coach Sub-11 (2024/25)</li><li>Assistance Coach Sub-11 (2023/24)</li></ul>",
         ],
       },

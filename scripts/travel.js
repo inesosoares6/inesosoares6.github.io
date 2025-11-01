@@ -9,7 +9,8 @@ const createTravelCards = () => {
                     <div class="card shadow-sm">
                         <img src="./assets/travel/${country.image}" alt="${
       country.country
-    } photo" loading="lazy">
+    } photo" loading="lazy" 
+        style="max-height: 200px">
                         <div class="card-body">
                             <h2 class="text-center">${country.country}</h2>
                             <p class="card-text text-center">${

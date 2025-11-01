@@ -1,5 +1,29 @@
 export const trips = [
   {
+    country: "Vietnam",
+    places: "Hanoi - Ha Giang - Ninh Binh - Hoi An - Hue - Da Nang",
+    years: "2025",
+    image: "vietnam.jpg",
+  },
+  {
+    country: "Thailand",
+    places: "Bangkok",
+    years: "2025",
+    image: "thailand.jpg",
+  },
+  {
+    country: "Greece",
+    places: "Kefalonia - Athens - Paros - Antiparos - Naxos - Amorgos",
+    years: "2024 - 2025",
+    image: "greece.jpg",
+  },
+  {
+    country: "Luxembourg",
+    places: "Luxembourg - Ettelbruck - Diekirch",
+    years: "2022 - 2025",
+    image: "luxembourg.png",
+  },
+  {
     country: "Switzerland",
     places:
       "Zurich - Lucerne - Kandersteg- Lausanne <br/> Zermatt - Montreaux - Bern - Thun - Interlaken <br/> Wengen - Lauterbrunnen - Interlaken - Grindelwald",
@@ -19,12 +43,6 @@ export const trips = [
     image: "paris.jpg",
   },
   {
-    country: "Greece",
-    places: "Athens - Paros - Antiparos - Naxos - Amorgos",
-    years: "2024",
-    image: "greece.jpg",
-  },
-  {
     country: "Spain",
     places: "Madrid - Seville <br/> Cudillero - Santander - Bilbao - Barcelona",
     years: "2012 - 2024",
@@ -35,12 +53,6 @@ export const trips = [
     places: "Himarë - Saranda - Ksamil - Gjirokastër - Berat - Tirana",
     years: "2023",
     image: "albania.png",
-  },
-  {
-    country: "Luxembourg",
-    places: "Luxembourg - Ettelbruck - Diekirch",
-    years: "2022 - 2023",
-    image: "luxembourg.png",
   },
   {
     country: "Germany",
