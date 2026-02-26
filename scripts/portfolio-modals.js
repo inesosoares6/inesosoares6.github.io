@@ -8,7 +8,7 @@ const fillContent = (id) => {
   const appIcon = document.querySelector(".app-icon");
   appIcon.setAttribute(
     "src",
-    `./assets/portfolio/${modals[id].appIcon}-icon.png`
+    `./assets/portfolio/${modals[id].appIcon}-icon.png`,
   );
 
   const icons = document.querySelector(".header-icons");
@@ -30,7 +30,7 @@ const fillContent = (id) => {
   const repo = document.querySelector(".github-link");
   repo.setAttribute(
     "href",
-    `https://github.com/inesosoares6/${modals[id].repo}`
+    `https://github.com/inesosoares6/${modals[id].repo}`,
   );
 
   const video = document.querySelector(".video-demo");
@@ -41,7 +41,7 @@ const fillContent = (id) => {
     textRow.setAttribute("class", "text-row row row-cols-1 row-cols-lg-2");
     video.setAttribute(
       "class",
-      "video-demo col col-lg-4 d-flex justify-content-center"
+      "video-demo col col-lg-4 d-flex justify-content-center",
     );
     if (modals[id].video.split(".").at(-1) === "mp4") {
       video.innerHTML = `<video
@@ -54,7 +54,7 @@ const fillContent = (id) => {
     } else {
       video.innerHTML = ` <img
                   class="image-crop"
-                  src="./assets/portfolio/videos/${modals[id].link}"
+                  src="./assets/portfolio/videos/${modals[id].video}"
                   alt="App demo gif"
                 />`;
     }
@@ -92,7 +92,7 @@ $(document).ready(() => {
     document
       .querySelector(`.card-${id}`)
       .addEventListener("click", () =>
-        showModal("portfolioModal", () => fillContent(id))
+        showModal("portfolioModal", () => fillContent(id)),
       );
   });
 });
