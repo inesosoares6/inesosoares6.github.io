@@ -67,7 +67,7 @@ const sports = [
         items: [
           { text: "Last season: Leixões Sport Club (2023/24)" },
           { text: "National Champion twice (2012, 2013)" },
-          { text: "Team Caption (2010 - 2016)" },
+          { text: "Team Captain (2010 - 2016)" },
         ],
       },
     ],
