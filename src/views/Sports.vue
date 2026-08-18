@@ -9,10 +9,24 @@
     <div class="sports-detailed-grid">
       <div v-for="sport in sports" :key="sport.name" class="sport-detail-card">
         <div class="card-header">
-          <div class="sport-icon-small">{{ sport.icon }}</div>
-          <div>
-            <h3>{{ sport.name }}</h3>
-            <span class="sport-years">{{ sport.years }}</span>
+          <div class="header-info">
+            <div class="sport-icon-small">{{ sport.icon }}</div>
+            <div class="title-group">
+              <h3>{{ sport.name }}</h3>
+              <span class="sport-years">{{ sport.years }}</span>
+            </div>
+          </div>
+
+          <!-- Stats badge aligned on the far right -->
+          <div v-if="sport.stats" class="badge-group">
+            <div
+              v-for="stat in sport.stats"
+              :key="stat.label"
+              class="stat-badge-circle"
+            >
+              <span class="stat-number">{{ stat.value }}</span>
+              <span class="stat-label">{{ stat.label }}</span>
+            </div>
           </div>
         </div>
 
@@ -74,8 +88,12 @@ const sports = [
   },
   {
     name: "Running",
-    icon: "🏃",
+    icon: "🏃‍♀️",
     years: "Since 2024",
+    stats: [
+      { value: 1, label: "Marathon" },
+      { value: 5, label: "Half Mar." },
+    ],
     sections: [
       {
         title: "Running Highlights",
@@ -89,6 +107,28 @@ const sports = [
         items: [
           { text: "Porto Half Marathon 2026" },
           { text: "Porto Marathon 2026" },
+          { text: "Berlin Half Marathon 2027" },
+        ],
+      },
+    ],
+  },
+  {
+    name: "Hyrox",
+    icon: "⚡",
+    years: "Since 2026",
+    stats: [{ value: 1, label: "Hyrox" }],
+    sections: [
+      {
+        title: "Hyrox Highlights",
+        items: [
+          { text: "Hybrid Day Leiria 2026", subItems: ["Singles @ 1h29"] },
+        ],
+      },
+      {
+        title: "Next Events",
+        items: [
+          { text: "Hybrid Day Estoril 2026 - Singles" },
+          { text: "Hybrid Day Vigo 2026 - Doubles" },
         ],
       },
     ],
@@ -100,17 +140,17 @@ const sports = [
     bio: "Gojo-ryu | Brown belt<br/>Practicing since age 4, Karate taught me discipline, respect, and adaptability—preparing me for adult life challenges.",
     sections: [],
   },
-  {
-    name: "Gym",
-    icon: "🏋️‍♀️",
-    years: "Since 2016",
-    sections: [
-      {
-        title: "Strength & Cardio",
-        items: [{ text: " Body Pump, Body Attack, RPM, HIIT" }],
-      },
-    ],
-  },
+  // {
+  //   name: "Gym",
+  //   icon: "🏋️‍♀️",
+  //   years: "Since 2016",
+  //   sections: [
+  //     {
+  //       title: "Strength & Cardio",
+  //       items: [{ text: "Body Pump, Body Attack, RPM, HIIT" }],
+  //     },
+  //   ],
+  // },
 ];
 </script>
 
@@ -205,14 +245,6 @@ li {
   line-height: 1.1; /* Reduces the line height for the whole group */
 }
 
-/* 2. Target the text container and remove the h3's default margin */
-.card-header > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px; /* Removes any gap between name and years */
-}
-
 .card-header h3 {
   margin: 0; /* Critical: removes browser-default spacing */
   padding: 0;
@@ -225,5 +257,86 @@ li {
   color: var(--accent);
   font-weight: 700;
   margin-top: -2px; /* Optional: nudge it up slightly if it still feels far */
+}
+
+/* Header container layout */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+/* Group icon and title text horizontally */
+.header-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Stack title and subtitle vertically next to the icon */
+.title-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-group h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.sport-years {
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+/* Stat badges aligned on the far right */
+
+/* Align circular badges horizontally in the top-right corner */
+.badge-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Circular badge container */
+.stat-badge-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+/* Emphasized number on top */
+.stat-number {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+}
+
+/* Small label text underneath */
+.stat-label {
+  font-size: 0.54rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  line-height: 1.1;
+  margin-top: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 </style>
