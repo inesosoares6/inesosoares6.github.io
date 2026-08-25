@@ -116,20 +116,20 @@ const sports = [
     name: "Hyrox",
     icon: "⚡",
     years: "Since 2026",
-    stats: [{ value: 1, label: "Hyrox" }],
+    stats: [{ value: 2, label: "Hyrox" }],
     sections: [
       {
         title: "Hyrox Highlights",
         items: [
-          { text: "Hybrid Day Leiria 2026", subItems: ["Singles @ 1h29"] },
+          {
+            text: "Hybrid Day Estoril 2026",
+            subItems: ["Singles @ 1h22 · 4th AG"],
+          },
         ],
       },
       {
         title: "Next Events",
-        items: [
-          { text: "Hybrid Day Estoril 2026 - Singles" },
-          { text: "Hybrid Day Vigo 2026 - Doubles" },
-        ],
+        items: [{ text: "Hybrid Day Vigo 2026 - Doubles" }],
       },
     ],
   },
