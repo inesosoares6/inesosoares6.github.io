@@ -67,12 +67,15 @@ const sports = [
         title: "Coaching (Since 2023)",
         items: [
           {
-            text: "Ala de Nun'Álvares de Gondomar",
-            subItems: ["Sub-13 & Sub-11 (2025/26)"],
+            text: "Leixões Sport Club",
+            subItems: [
+              "Head Coach Sub-14 & Sub-11 (2026/27)",
+              "Head Coach Sub-11 (2024/25)",
+            ],
           },
           {
-            text: "Leixões Sport Club",
-            subItems: ["Head Coach Sub-11 (2024/25)"],
+            text: "Ala de Nun'Álvares de Gondomar",
+            subItems: ["Sub-13 & Sub-11 (2025/26)"],
           },
         ],
       },
