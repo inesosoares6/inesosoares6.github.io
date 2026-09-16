@@ -1,9 +1,18 @@
 <template>
-  <div class="page-container">
+  <div class="page-container" :class="{ 'q-px-none': isMobile }">
     <header class="page-header">
       <div class="icon-circle">⚡</div>
       <h1>Active Life</h1>
       <p>How I stay energized and focused outside of coding.</p>
+      <a
+        href="https://strava.app.link/jTK2k5IKt6b"
+        target="_blank"
+        rel="noopener
+        noreferrer"
+        class="strava-link"
+      >
+        🟠 View on Strava
+      </a>
     </header>
 
     <div class="sports-detailed-grid">
@@ -57,6 +66,23 @@
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted } from "vue";
+
+const isMobile = ref(false);
+
+const checkIsMobile = () => {
+  isMobile.value = window.innerWidth <= 768; // adjust breakpoint as needed
+};
+
+onMounted(() => {
+  checkIsMobile();
+  window.addEventListener("resize", checkIsMobile);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("resize", checkIsMobile);
+});
+
 const sports = [
   {
     name: "Volleyball",
@@ -95,20 +121,19 @@ const sports = [
     years: "Since 2024",
     stats: [
       { value: 1, label: "Marathon" },
-      { value: 5, label: "Half Mar." },
+      { value: 6, label: "Half Mar." },
     ],
     sections: [
       {
         title: "Running Highlights",
         items: [
-          { text: "Porto Half Marathon 2025", subItems: ["1h41 @ 4'47\"/km"] },
+          { text: "Porto Half Marathon 2026", subItems: ["1h38 @ 4'39\"/km"] },
           { text: "Porto Marathon 2024", subItems: ["3h44 @ 5'17\"/km"] },
         ],
       },
       {
         title: "Next Races",
         items: [
-          { text: "Porto Half Marathon 2026" },
           { text: "Porto Marathon 2026" },
           { text: "Berlin Half Marathon 2027" },
         ],
@@ -119,7 +144,7 @@ const sports = [
     name: "Hyrox",
     icon: "⚡",
     years: "Since 2026",
-    stats: [{ value: 2, label: "Hyrox" }],
+    stats: [{ value: 2, label: "Singles" }],
     sections: [
       {
         title: "Hyrox Highlights",
@@ -175,6 +200,7 @@ const sports = [
 .card-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 15px;
   margin-bottom: 25px;
 }
@@ -188,12 +214,6 @@ const sports = [
   align-items: center;
   justify-content: center;
   border-radius: 16px;
-}
-
-.sport-years {
-  font-size: 0.8rem;
-  color: var(--accent);
-  font-weight: 700;
 }
 
 .sport-bio {
@@ -237,38 +257,6 @@ li {
   position: absolute;
   left: 0;
   color: var(--accent);
-}
-
-/* 1. Tighten the flex container */
-.card-header {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 25px;
-  line-height: 1.1; /* Reduces the line height for the whole group */
-}
-
-.card-header h3 {
-  margin: 0; /* Critical: removes browser-default spacing */
-  padding: 0;
-  font-size: 1.25rem;
-  font-weight: 800;
-}
-
-.sport-years {
-  font-size: 0.8rem;
-  color: var(--accent);
-  font-weight: 700;
-  margin-top: -2px; /* Optional: nudge it up slightly if it still feels far */
-}
-
-/* Header container layout */
-.card-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-  margin-bottom: 25px;
 }
 
 /* Group icon and title text horizontally */
@@ -341,5 +329,31 @@ li {
   margin-top: 2px;
   text-transform: uppercase;
   letter-spacing: 0.02em;
+}
+
+/* Strava link */
+.strava-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #fff5f0;
+  border: 1px solid #fed7c3;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #fc4c02;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+.strava-link:hover {
+  background: #ffe8dc;
+  text-decoration: none;
+}
+
+.page-container.q-px-none {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 </style>
