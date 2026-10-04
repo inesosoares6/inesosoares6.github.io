@@ -12,6 +12,7 @@
       rel="noopener noreferrer"
       >View Project <span>→</span></a
     >
+    <img class="project-logo" :src="data.logo" alt="" aria-hidden="true" />
   </div>
 </template>
 
@@ -21,6 +22,7 @@ defineProps(["data"]);
 
 <style scoped>
 .card {
+  position: relative;
   background: white;
   padding: 2rem;
   border-radius: 24px;
@@ -62,5 +64,16 @@ p {
   color: var(--accent);
   font-weight: 600;
   text-decoration: none;
+  padding-right: 56px;
+}
+
+.project-logo {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 10px;
 }
 </style>
