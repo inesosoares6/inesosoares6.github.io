@@ -9,10 +9,11 @@
           young age, I learned how to define priorities and manage time.
         </p>
         <p>
-          I played volleyball for 18 years and always liked to enjoy the time
-          between seasons to travel the world. To combine my interests, in my
-          free time, I like to develop some mobile apps to simplify my daily
-          life.
+          After 18 years of playing volleyball, I now coach the under-14 and
+          under-11 teams, supporting around 80 children. I also love challenging
+          myself with marathons and HYROX competitions. When I'm not coding,
+          coaching, or training, I enjoy traveling and building mobile apps to
+          simplify everyday life.
         </p>
       </div>
 

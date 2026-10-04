@@ -34,6 +34,24 @@ import ProjectCard from "../components/ProjectCard.vue";
 
 const projects = ref([
   {
+    title: "Invictus Clinic Website",
+    tech: ["Website", "Healthcare"],
+    desc: "A website for Invictus Clinic, offering physiotherapy, nutrition, and psychological services.",
+    link: "https://invictusclinic.pt",
+  },
+  {
+    title: "Nutriway Clinic Website",
+    tech: ["Website", "Nutrition"],
+    desc: "A nutrition and wellness website where clients can explore consultations, practical recipes, ebooks, and guidance for building healthier habits.",
+    link: "https://teresalemosnutricao.pt",
+  },
+  {
+    title: "NutriPrep App",
+    tech: ["Web App", "Nutrition"],
+    desc: "A private client app where Nutriway clients can sign in and access their personalized nutrition plan.",
+    link: "https://app.teresalemosnutricao.pt",
+  },
+  {
     title: "Book Library",
     tech: ["Vue", "Vuetify", "Pinia", "Firebase"],
     desc: "A database to track and manage your reading list with a clean, focused UI.",

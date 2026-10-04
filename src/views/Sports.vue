@@ -87,7 +87,7 @@ const sports = [
   {
     name: "Volleyball",
     icon: "🏐",
-    years: "2006 — Present",
+    years: "Since 2006",
     sections: [
       {
         title: "Coaching (Since 2023)",
@@ -95,13 +95,9 @@ const sports = [
           {
             text: "Leixões Sport Club",
             subItems: [
-              "Head Coach Sub-14 & Sub-11 (2026/27)",
-              "Head Coach Sub-11 (2024/25)",
+              "Head Coach Sub-14 (2026/27)",
+              "Coordinator & Head Coach Sub-11 (2026/27)",
             ],
-          },
-          {
-            text: "Ala de Nun'Álvares de Gondomar",
-            subItems: ["Sub-13 & Sub-11 (2025/26)"],
           },
         ],
       },
