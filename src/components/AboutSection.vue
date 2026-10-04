@@ -20,8 +20,13 @@
       <div class="skills-side">
         <h3>My Stack</h3>
         <div class="skill-grid">
-          <span v-for="skill in skills" :key="skill" class="skill-pill">
-            {{ skill }}
+          <span v-for="skill in skills" :key="skill.name" class="skill-pill">
+            <img
+              :src="`https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/${skill.icon}.svg`"
+              alt=""
+              aria-hidden="true"
+            />
+            {{ skill.name }}
           </span>
         </div>
       </div>
@@ -31,20 +36,26 @@
 
 <script setup>
 const skills = [
-  "Vue.js",
-  "VueX",
-  "Pinia",
-  "Vite",
-  "Vitest",
-  "Tailwind CSS",
-  "TypeScript",
-  "Git",
-  "Figma",
-  "JIRA",
-  "Confluence",
-  "draw.io",
-  "Miro",
-  "Python",
+  { name: "Vue.js", icon: "vue-js" },
+  { name: "VueX", icon: "vue-js" },
+  { name: "Pinia", icon: "pinia" },
+  {
+    name: "Vite",
+    icon: "vite",
+  },
+  {
+    name: "Vitest",
+    icon: "vitest",
+  },
+  { name: "Tailwind CSS", icon: "tailwind" },
+  { name: "TypeScript", icon: "typescript" },
+  { name: "Git", icon: "git" },
+  { name: "Figma", icon: "figma" },
+  { name: "JIRA", icon: "jira" },
+  { name: "Confluence", icon: "confluence" },
+  { name: "draw.io", icon: "draw-io" },
+  { name: "Miro", icon: "miro" },
+  { name: "Python", icon: "python" },
 ];
 </script>
 
@@ -76,10 +87,17 @@ const skills = [
   background: white;
   padding: 10px 20px;
   border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 600;
   font-size: 0.9rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
   border: 1px solid #f1f5f9;
+}
+.skill-pill img {
+  width: 18px;
+  height: 18px;
 }
 @media (max-width: 768px) {
   .about-content {
